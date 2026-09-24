@@ -1,0 +1,27 @@
+project:
+  type: default
+
+crossref:
+  exr-title: ''
+  exr-prefix: вопр.
+  chapters: false
+
+lang: ru
+engine: knitr
+
+format:
+  pdf:
+    code-block-bg: "#FCFCFC"
+    latex-auto-install: false
+    use-rsvg-convert: true
+    papersize: a4
+    colorlinks: true
+    mainfont: Times New Roman
+    sansfont: Times New Roman
+    monofont: Noto Sans Mono Black
+    fontsize: 10pt
+    number-sections: false
+    include-in-header:
+      - text: |
+         \usepackage{fontspec}
+         \usepackage{fontawesome5}
