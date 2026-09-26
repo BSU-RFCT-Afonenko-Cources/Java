@@ -1,0 +1,29 @@
+# Лямбда-выражения и функциональное программирование {#sec-java-lambdas}
+
+Передача поведения связывает объектные интерфейсы с функциональными вычислениями и границами эффектов из @sec-java-types-contracts-effects.
+
+## Функциональные интерфейсы {#sec-java-lambdas-functional-interface}
+
+## Лямбда-выражения и ссылки на методы {#sec-java-lambdas-syntax}
+
+## Замыкания и захват переменных {#sec-java-lambdas-capture}
+
+## Функции высшего порядка и композиция {#sec-java-lambdas-higher-order}
+
+## Чистые функции и побочные эффекты {#sec-java-lambdas-purity}
+
+### Ссылочная прозрачность и замена выражения его значением {#sec-java-lambdas-transparency}
+
+## Отображение, фильтрация и свёртка {#sec-java-lambdas-operations}
+
+### Тождественное отображение, композиция и законы map {#sec-java-lambdas-laws}
+
+## Ленивые вычисления и порядок обработки {#sec-java-lambdas-lazy}
+
+## Ассоциативность и параллельное объединение результатов {#sec-java-lambdas-parallel}
+
+### Нейтральный элемент и согласованность свёртки {#sec-java-lambdas-monoid}
+
+## Общие идеи Streams, LINQ, SQL и MapReduce {#sec-java-lambdas-transfer}
+
+Какие перестановки операций сохраняют значения, порядок эффектов и момент отказа, если учесть машинную арифметику из @sec-java-types-numbers?

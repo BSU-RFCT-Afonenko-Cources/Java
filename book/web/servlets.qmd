@@ -1,0 +1,23 @@
+# Серверные приложения и Jakarta Servlet {#sec-web-servlets}
+
+Servlet API показывает устройство серверной обработки запроса и роль контейнера Java-приложений. Общие данные подчиняются @sec-concurrency-synchronization; способы формирования интерфейса сопоставляются в @sec-web-presentation.
+
+## Веб-сервер, контейнер и приложение {#sec-web-servlets-server}
+
+### Эволюция серверной обработки: CGI, servlet и middleware — обзор {#sec-web-servlets-server-models}
+
+## Жизненный цикл servlet {#sec-web-servlets-lifecycle}
+
+## Маршрутизация и обработка запроса {#sec-web-servlets-routing}
+
+## Параметры запроса и проверка данных {#sec-web-servlets-parameters}
+
+## Формирование ответа и обработка ошибок {#sec-web-servlets-responses}
+
+## Общие поля и одновременные запросы {#sec-web-servlets-state}
+
+### Два запроса и один экземпляр обработчика {#sec-web-servlets-request-interleaving}
+
+## Фильтры и цепочка обработки — обзор {#sec-web-servlets-filters}
+
+## WAR и контекст приложения {#sec-web-servlets-deployment}

@@ -1,0 +1,23 @@
+# Обработка данных с помощью Stream API {#sec-appendices-standard-library-streams}
+
+Библиотечные операции сопоставляются с уже введёнными понятиями отображения, фильтрации и свёртки.
+
+## Создание потоков из коллекций, массивов и файлов {#sec-appendices-standard-library-streams-sources}
+
+## Промежуточные операции: filter, map и flatMap {#sec-appendices-standard-library-streams-intermediate}
+
+## Терминальные операции и короткое замыкание {#sec-appendices-standard-library-streams-terminal}
+
+## Агрегирование: reduce и числовые потоки {#sec-appendices-standard-library-streams-reduction}
+
+## Сбор результатов: collect и Collectors {#sec-appendices-standard-library-streams-collectors}
+
+### Группировка и разбиение данных {#sec-appendices-standard-library-streams-collectors-grouping}
+
+### Пользовательские коллекторы {#sec-appendices-standard-library-streams-collectors-custom-collector}
+
+## Параллельные потоки, порядок и побочные эффекты {#sec-appendices-standard-library-streams-parallel}
+
+## Представление отсутствующего результата: Optional {#sec-appendices-standard-library-streams-optional}
+
+См. @sec-java-lambdas, @sec-data-collections.

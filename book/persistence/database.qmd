@@ -1,0 +1,29 @@
+# Работа Java-приложения с базой данных {#sec-persistence-database}
+
+Связь с базой данных изучается со стороны приложения: запросы, отображение результатов, ресурсы и транзакции. Контракты API вынесены в @sec-appendices-standard-library-sql-jdbc; владение ресурсами опирается на @sec-java-exceptions-resources.
+
+## JDBC: соединение, запрос и результат {#sec-persistence-database-connection}
+
+## Параметризованные запросы и отделение данных от SQL {#sec-persistence-database-parameters}
+
+## Отображение строк в объекты {#sec-persistence-database-mapping}
+
+## SQL NULL и отсутствие результата {#sec-persistence-database-missing}
+
+## Владение соединением и закрытие ресурсов {#sec-persistence-database-resources}
+
+## Граница транзакции, фиксация и откат {#sec-persistence-database-transactions}
+
+### Граница общего успеха и частичный отказ {#sec-persistence-database-partial-failure}
+
+## Обработка ошибок хранилища {#sec-persistence-database-errors}
+
+### SQLState, код поставщика и переносимость обработки ошибки {#sec-persistence-database-error-portability}
+
+## Пул соединений и ORM — обзор {#sec-persistence-database-overview}
+
+### Переносимость JDBC, драйверов и SQL {#sec-persistence-database-portability}
+
+### Ленивое отображение и проблема N+1 {#sec-persistence-database-lazy-mapping}
+
+### Время жизни соединения и отложенное чтение результата {#sec-persistence-database-lifetime-experiment}

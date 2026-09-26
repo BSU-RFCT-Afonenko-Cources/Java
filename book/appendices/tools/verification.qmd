@@ -1,0 +1,19 @@
+# Инструменты проверки свойств и формальных спецификаций {#sec-appendices-tools-verification}
+
+Материал предназначен для добровольного углубления после освоения спецификаций и модульного тестирования.
+
+## Представление свойств и метаморфных отношений в тестовом проекте {#sec-appendices-tools-verification-properties}
+
+## Генерация входных данных и уменьшение контрпримера {#sec-appendices-tools-verification-generation}
+
+## Проверка свойств с помощью jqwik {#sec-appendices-tools-verification-jqwik}
+
+## Мутационное тестирование с помощью PIT {#sec-appendices-tools-verification-mutation}
+
+## Контракты JML: предусловия, постусловия и инварианты {#sec-appendices-tools-verification-jml}
+
+## Статическая проверка с помощью OpenJML {#sec-appendices-tools-verification-openjml}
+
+## Предпосылки инструментов и интерпретация результатов {#sec-appendices-tools-verification-limits}
+
+См. @sec-development-testing.

@@ -1,0 +1,29 @@
+# Наследование и динамический полиморфизм {#sec-java-inheritance}
+
+Наследование связывает общую реализацию с механизмом вызова методов, а поведенческие условия подстановки рассматриваются в @sec-java-interfaces.
+
+## Базовый класс, подкласс и отношение подтипа {#sec-java-inheritance-hierarchy}
+
+## Переопределение методов и динамическое связывание {#sec-java-inheritance-override}
+
+## Перегрузка и переопределение {#sec-java-inheritance-overload}
+
+### Статический тип выражения и фактический класс объекта {#sec-java-inheritance-dispatch}
+
+### Сокрытие полей и статических методов {#sec-java-inheritance-hiding}
+
+## Вызов super и порядок инициализации {#sec-java-inheritance-construction}
+
+### Переопределяемый вызов из конструктора Java и C++ {#sec-java-inheritance-constructor-dispatch}
+
+## Абстрактные классы и методы {#sec-java-inheritance-abstract}
+
+## Класс Object как корень иерархии {#sec-java-inheritance-object}
+
+## final и sealed: управление расширением {#sec-java-inheritance-restrictions}
+
+## Ограничения наследования реализации {#sec-java-inheritance-limits}
+
+## Таблицы методов, кэши вызовов и девиртуализация {#sec-java-inheritance-implementation}
+
+Какие предположения позволяют JVM заменить динамический вызов прямым, сохраняя правила выбора реализации из @sec-java-runtime-execution-semantics?

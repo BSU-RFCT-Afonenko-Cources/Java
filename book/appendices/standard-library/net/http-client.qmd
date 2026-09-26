@@ -1,0 +1,19 @@
+# HTTP-клиент java.net.http {#sec-appendices-standard-library-net-http-client}
+
+Справочник по отправке запросов, получению ответов и управлению ресурсами стандартного HTTP-клиента.
+
+## Адреса ресурсов: URI и кодирование компонентов {#sec-appendices-standard-library-net-http-client-uri}
+
+## Создание и настройка HttpClient {#sec-appendices-standard-library-net-http-client-client}
+
+## Построение запроса: HttpRequest и BodyPublisher {#sec-appendices-standard-library-net-http-client-request}
+
+## Обработка ответа: HttpResponse и BodyHandler {#sec-appendices-standard-library-net-http-client-response}
+
+## Синхронная и асинхронная отправка: send и sendAsync {#sec-appendices-standard-library-net-http-client-async}
+
+## Таймауты, прерывание и ошибки обмена {#sec-appendices-standard-library-net-http-client-errors}
+
+## Потоковая обработка тела и закрытие клиента {#sec-appendices-standard-library-net-http-client-resources}
+
+См. @sec-web-http.

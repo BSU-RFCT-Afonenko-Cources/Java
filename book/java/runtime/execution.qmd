@@ -1,0 +1,29 @@
+# Устройство выполнения Java-программы {#sec-java-runtime-execution}
+
+Модель JVM связывает переносимое представление программы с конкретной реализацией платформы, введённой в @sec-java-platform.
+
+## Абстрактная машина, ISA и двоичный интерфейс ABI {#sec-java-runtime-execution-abstraction}
+
+## Исходный язык, промежуточное представление и машинный код {#sec-java-runtime-execution-representations}
+
+## Class-файл: инструкции, константы и метаданные {#sec-java-runtime-execution-class-file}
+
+## Загрузка, связывание и инициализация классов {#sec-java-runtime-execution-loading}
+
+### Разрешение символических ссылок и раздельная компиляция {#sec-java-runtime-execution-linking}
+
+## Проверка байткода и границы верификации {#sec-java-runtime-execution-verification}
+
+## Кадр вызова, локальные переменные и стек операндов {#sec-java-runtime-execution-frames}
+
+### Выполнение выражения как последовательность состояний {#sec-java-runtime-execution-instructions}
+
+## Интерпретатор, JIT- и AOT-компиляция {#sec-java-runtime-execution-compilation}
+
+### Профиль выполнения, встраивание и деоптимизация {#sec-java-runtime-execution-optimization}
+
+## Другие языки JVM и границы взаимодействия с нативным кодом {#sec-java-runtime-execution-interoperability}
+
+## Сохранение семантики при оптимизации {#sec-java-runtime-execution-semantics}
+
+Какие наблюдения должны сохраниться после встраивания метода, а какие измерения зависят от прогрева и выбранной реализации?

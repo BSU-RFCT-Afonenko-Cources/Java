@@ -1,0 +1,29 @@
+# Язык Java и платформа JVM {#sec-java-platform}
+
+Место Java среди языков программирования связывает развитие абстракций с моделью исполнения из @sec-java-runtime-execution.
+
+## Развитие языков программирования и появление Java {#sec-java-platform-history}
+
+### Процедуры, модули, объекты и функции {#sec-java-platform-abstractions}
+
+### Рост программ и локальное рассуждение о компонентах {#sec-java-platform-complexity}
+
+## Основные свойства языка Java {#sec-java-platform-features}
+
+### Назначение языка и сочетание парадигм {#sec-java-platform-paradigms}
+
+## JDK, JVM и стандартная библиотека {#sec-java-platform-platform}
+
+## Компиляция и выполнение Java-программы {#sec-java-platform-execution}
+
+## Байткод как граница между языком и средой исполнения {#sec-java-platform-bytecode}
+
+## Выбор между интерпретацией и компиляцией {#sec-java-platform-jit}
+
+## Переносимость и совместимость программ {#sec-java-platform-portability}
+
+## Спецификация языка и гарантии реализации {#sec-java-platform-contracts}
+
+### Математическая модель, стандарт и экспериментальное наблюдение {#sec-java-platform-evidence}
+
+Какие предпосылки связывают гарантии процессора, среды исполнения и предметного API, и какие из них не устанавливаются успешной компиляцией?

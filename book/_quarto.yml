@@ -1,0 +1,120 @@
+project:
+  type: book
+  output-dir: _book/student
+book:
+  title: Программирование на Java
+  subtitle: Язык, инструменты и разработка приложений
+  search: true
+  page-navigation: true
+  sidebar:
+    collapse-level: 1
+  chapters:
+  - index.qmd
+  - part: Основы языка и платформы Java (Core Java)
+    chapters:
+    - java/platform.qmd
+    - java/runtime/execution.qmd
+    - java/basics.qmd
+    - java/types/numbers.qmd
+    - java/references.qmd
+    - java/types/arrays.qmd
+    - java/types/text.qmd
+    - java/runtime/memory.qmd
+    - java/classes.qmd
+    - java/inheritance.qmd
+    - java/interfaces.qmd
+    - java/types/contracts.qmd
+    - java/generics.qmd
+    - java/lambdas.qmd
+    - java/exceptions.qmd
+  - part: Коллекции, ввод-вывод и представление данных
+    chapters:
+    - data/collections.qmd
+    - data/io.qmd
+    - data/formats.qmd
+  - part: Инструменты и процесс разработки
+    chapters:
+    - development/git/basics.qmd
+    - development/git/branches.qmd
+    - development/build.qmd
+    - development/testing.qmd
+  - part: Объектно ориентированное проектирование
+    chapters:
+    - design/principles.qmd
+    - design/patterns/creation.qmd
+    - design/patterns/structure.qmd
+    - design/patterns/behavior.qmd
+    - design/events.qmd
+  - part: Многопоточное и асинхронное программирование
+    chapters:
+    - concurrency/threads.qmd
+    - concurrency/synchronization.qmd
+    - concurrency/tasks.qmd
+  - part: Сетевое программирование, веб и базы данных
+    chapters:
+    - web/http.qmd
+    - web/servlets.qmd
+    - web/presentation.qmd
+    - persistence/database.qmd
+  - part: Архитектура Java-приложений
+    chapters:
+    - architecture/modules.qmd
+    - architecture/dependencies.qmd
+    - architecture/frameworks.qmd
+  - part: Качество, безопасность и разработка приложения
+    chapters:
+    - quality/diagnostics.qmd
+    - quality/security.qmd
+    - quality/reliability.qmd
+    - integration/application.qmd
+  appendices:
+  - part: Стандартная библиотека
+    chapters:
+    - appendices/standard-library/numbers.qmd
+    - appendices/standard-library/text.qmd
+    - appendices/standard-library/collections.qmd
+    - appendices/standard-library/streams.qmd
+    - appendices/standard-library/io.qmd
+    - appendices/standard-library/xml.qmd
+    - appendices/standard-library/time.qmd
+    - appendices/standard-library/concurrency/synchronization.qmd
+    - appendices/standard-library/concurrency/tasks.qmd
+    - appendices/standard-library/net/http-client.qmd
+    - appendices/standard-library/sql/jdbc.qmd
+  - part: Внешние библиотеки
+    chapters:
+    - appendices/external-libraries/jackson.qmd
+  - part: Дополнительные инструменты
+    chapters:
+    - appendices/tools/tomcat.qmd
+    - appendices/tools/h2.qmd
+    - appendices/tools/diagnostics.qmd
+    - appendices/tools/alternatives.qmd
+    - appendices/tools/verification.qmd
+    - appendices/gui/javafx.qmd
+    - appendices/tools/jdk.qmd
+  - part: Прикладные фреймворки
+    chapters:
+    - appendices/frameworks/spring.qmd
+  - part: Сравнительные материалы
+    chapters:
+    - appendices/platforms/comparison.qmd
+lang: ru
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+profile:
+  default: student
+  group:
+  - - student
+    - full
+course:
+  schema: '1.0'
+  id: java-book
+  validate: true
+  view: student
+filters:
+- course-core

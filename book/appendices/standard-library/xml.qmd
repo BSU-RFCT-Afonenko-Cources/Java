@@ -1,0 +1,17 @@
+# Обработка XML средствами JAXP {#sec-appendices-standard-library-xml}
+
+XML рассматривается как дополнительный формат данных и документов; обязательная практика работы с JSON описывается отдельно.
+
+## Элементы, атрибуты и пространства имён XML {#sec-appendices-standard-library-xml-structure}
+
+## Модель DOM и обработка дерева документа {#sec-appendices-standard-library-xml-dom}
+
+## Последовательная обработка: SAX и StAX {#sec-appendices-standard-library-xml-streaming}
+
+## Проверка документа по схеме XSD {#sec-appendices-standard-library-xml-schema}
+
+## Выбор узлов с помощью XPath {#sec-appendices-standard-library-xml-xpath}
+
+## Настройка доступа к внешним сущностям и ресурсам {#sec-appendices-standard-library-xml-security}
+
+См. @sec-data-formats.

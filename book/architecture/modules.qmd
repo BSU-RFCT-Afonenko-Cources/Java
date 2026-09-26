@@ -1,0 +1,27 @@
+# Модульность и архитектура приложения {#sec-architecture-modules}
+
+Архитектура определяет распределение ответственности и зависимости между крупными частями программы. Точка сборки объектов рассматривается в @sec-architecture-dependencies; совместимость поставляемых компонентов — в @sec-development-build-reproducibility.
+
+## Информационное сокрытие и границы модуля {#sec-architecture-modules-modularity}
+
+### Декомпозиция по этапам работы и по скрываемым решениям {#sec-architecture-modules-parnas}
+
+## Слои представления, приложения и доступа к данным {#sec-architecture-modules-layers}
+
+### Двухуровневые и многоуровневые приложения {#sec-architecture-modules-tiers}
+
+## Предметная модель и сервисы {#sec-architecture-modules-domain}
+
+## Порты и адаптеры {#sec-architecture-modules-ports}
+
+## Зависимости исходного кода и взаимодействие объектов {#sec-architecture-modules-graphs}
+
+### Граф исходных зависимостей, граф объектов и граф вызовов {#sec-architecture-modules-three-graphs}
+
+## Изменение API и совместимость {#sec-architecture-modules-compatibility}
+
+## Модули Java и границы доступа — обзор {#sec-architecture-modules-jpms}
+
+## Модульный монолит и микросервисы — обзор {#sec-architecture-modules-deployment}
+
+### Замена инфраструктуры без изменения предметного правила {#sec-architecture-modules-replacement-experiment}

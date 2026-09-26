@@ -1,0 +1,31 @@
+# Исключения и управление ресурсами {#sec-java-exceptions}
+
+Исключения связывают способы завершения вычисления с инвариантами из @sec-java-classes-contracts и временем жизни ресурсов из @sec-java-runtime-memory.
+
+## Возврат значения, отказ, исключение и незавершение {#sec-java-exceptions-outcomes}
+
+### Специальное значение, код ошибки и вариант результата {#sec-java-exceptions-results}
+
+## Иерархия исключений Java {#sec-java-exceptions-hierarchy}
+
+## Проверяемые и непроверяемые исключения {#sec-java-exceptions-checked}
+
+## throw, throws, try, catch и finally {#sec-java-exceptions-handling}
+
+## Распространение исключения по стеку вызовов {#sec-java-exceptions-propagation}
+
+## Проектирование исключений и сохранение причины {#sec-java-exceptions-design}
+
+## Закрываемые ресурсы и try-with-resources {#sec-java-exceptions-resources}
+
+### Порядок закрытия и подавленные исключения {#sec-java-exceptions-suppressed}
+
+## Гарантии состояния при исключении {#sec-java-exceptions-guarantees}
+
+### Сохранение инварианта и сильная гарантия отказа {#sec-java-exceptions-atomicity}
+
+## RAII, using и with: сравнение механизмов {#sec-java-exceptions-comparison}
+
+## Почему finalization не задаёт своевременное освобождение ресурса {#sec-java-exceptions-finalization}
+
+Как должны сочетаться отказ основной операции и отказ при закрытии, чтобы вызывающий код сохранил сведения о причине и состоянии объекта?

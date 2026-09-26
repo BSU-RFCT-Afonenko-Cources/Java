@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: _site
+  render: []
+  resources:
+    - "!book/**"
+    - "!essay/**"
+    - "!test/**"
+filters:
+  - reference-catalog
+reference-catalog:
+  namespace: site
+  home: book
+  projects:
+    book: {path: book, format: html}
+    essay: {path: essay, format: html}
+profile:
+  default: student
+  group: [[student, full]]

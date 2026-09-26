@@ -1,0 +1,19 @@
+# Разработка приложения с Spring Boot и Spring MVC {#sec-appendices-frameworks-spring}
+
+Материал развивает введённые в основной части понятия внедрения зависимостей, веб-обработчика и конфигурации приложения.
+
+## Структура приложения и зависимости Spring Boot {#sec-appendices-frameworks-spring-project}
+
+## Свойства, профили и условная конфигурация {#sec-appendices-frameworks-spring-configuration}
+
+## Регистрация компонентов и связывание зависимостей {#sec-appendices-frameworks-spring-beans}
+
+## Контроллеры Spring MVC и отображение HTTP-запросов {#sec-appendices-frameworks-spring-mvc}
+
+## Проверка входных данных и обработка ошибок {#sec-appendices-frameworks-spring-validation}
+
+## Обзор настройки аутентификации и авторизации {#sec-appendices-frameworks-spring-security}
+
+## Интеграционные проверки, журналы и Actuator {#sec-appendices-frameworks-spring-testing}
+
+См. @sec-architecture-frameworks, @sec-architecture-dependencies.
