@@ -1,0 +1,29 @@
+# Коллекции и абстрактные типы данных {#sec-data-collections}
+
+Коллекции изучаются через назначение, свойства элементов и стоимость операций; справочник реализаций расположен в приложениях.
+
+## Абстрактный тип данных и структура данных {#sec-data-collections-adt}
+
+## Списки, множества, очереди и отображения {#sec-data-collections-families}
+
+## Итерация и порядок обхода {#sec-data-collections-iteration}
+
+## Равенство и хеширование элементов {#sec-data-collections-equality}
+
+## Естественный порядок и внешний компаратор {#sec-data-collections-ordering}
+
+## Изменяемость элементов и ключей {#sec-data-collections-keys}
+
+## Худшая, ожидаемая и амортизированная стоимость {#sec-data-collections-cost}
+
+## Выбор коллекции для прикладной задачи {#sec-data-collections-selection}
+
+## Представление, снимок и неизменяемая структура данных {#sec-data-collections-views}
+
+### Разделение внутренней структуры и цена копирования {#sec-data-collections-sharing}
+
+## Исследование нарушения контракта ключа и компаратора {#sec-data-collections-contract-experiment}
+
+### Воспроизводимый контрпример и границы допустимых наблюдений {#sec-data-collections-counterexample}
+
+См. @sec-java-generics, @sec-java-types-arrays и @sec-appendices-standard-library-collections.

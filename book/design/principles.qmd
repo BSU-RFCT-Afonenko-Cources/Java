@@ -1,0 +1,29 @@
+# Проектирование классов и рефакторинг {#sec-design-principles}
+
+Проектирование связывает сценарии использования, распределение обязанностей и изменение существующего кода. Контракты подтипов связываются с @sec-java-interfaces, а критерии крупной декомпозиции — с @sec-architecture-modules.
+
+## Сценарии использования и выделение классов {#sec-design-principles-requirements}
+
+## Распределение обязанностей между объектами {#sec-design-principles-responsibilities}
+
+## Диаграммы классов и взаимодействий UML {#sec-design-principles-uml}
+
+## Абстракция данных и инкапсуляция {#sec-design-principles-representation}
+
+### Независимость представления и наблюдаемое поведение {#sec-design-principles-representation-independence}
+
+### Инвариант представления и функция абстракции {#sec-design-principles-invariants}
+
+## Внутренняя связность и зависимости между классами {#sec-design-principles-dependencies}
+
+## Принципы SOLID и их применение {#sec-design-principles-principles}
+
+### Проектирование API, исключающего недопустимые состояния {#sec-design-principles-impossible-states}
+
+## Рефакторинг и признаки неудачного дизайна {#sec-design-principles-refactoring}
+
+## Оценка решения при изменении требований {#sec-design-principles-evaluation}
+
+### Добавление нового типа и новой операции: expression problem — обзор {#sec-design-principles-expression-problem}
+
+### Сравнение двух декомпозиций при изменении требований {#sec-design-principles-design-experiment}

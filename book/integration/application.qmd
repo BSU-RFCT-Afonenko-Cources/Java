@@ -1,0 +1,23 @@
+# Разработка и проверка Java-приложения {#sec-integration-application}
+
+Заключительная тема объединяет проектирование, реализацию, тестирование и объяснение принятых решений. Обоснование решений связывает @sec-design-principles, @sec-development-testing и @sec-quality-diagnostics-experiments.
+
+## Требования и сценарии использования {#sec-integration-application-requirements}
+
+## Предметная модель и архитектура {#sec-integration-application-design}
+
+## Согласование формата, HTTP API и хранения {#sec-integration-application-integration}
+
+### Композиция контрактов и сквозное требование {#sec-integration-application-contract-composition}
+
+## Сквозные тесты и диагностика {#sec-integration-application-validation}
+
+## Изменение требований и рефакторинг {#sec-integration-application-change}
+
+## Использование ИИ и независимая проверка кода {#sec-integration-application-ai}
+
+### Спецификация, независимая проверка и оценка предложенного решения {#sec-integration-application-independent-evidence}
+
+## Перенос решений на другие языки и платформы {#sec-integration-application-comparison}
+
+### Исследовательский вопрос, метод и границы вывода {#sec-integration-application-research-method}

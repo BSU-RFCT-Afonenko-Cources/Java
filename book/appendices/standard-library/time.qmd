@@ -1,0 +1,17 @@
+# Дата и время: java.time {#sec-appendices-standard-library-time}
+
+Материал разграничивает календарные значения, моменты времени и длительности и даёт справочную карту соответствующих классов.
+
+## Моменты времени: Instant {#sec-appendices-standard-library-time-instant}
+
+## Календарные значения: LocalDate, LocalTime и LocalDateTime {#sec-appendices-standard-library-time-local}
+
+## Часовые пояса и смещения: ZoneId, ZonedDateTime и OffsetDateTime {#sec-appendices-standard-library-time-zones}
+
+## Длительности и календарные периоды: Duration и Period {#sec-appendices-standard-library-time-amounts}
+
+## Разбор и форматирование: DateTimeFormatter {#sec-appendices-standard-library-time-formatting}
+
+## Источник времени: Clock и детерминированная проверка сроков {#sec-appendices-standard-library-time-clock}
+
+См. @sec-quality-diagnostics, @sec-quality-reliability.

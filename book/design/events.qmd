@@ -1,0 +1,19 @@
+# Событийное программирование и модель интерфейса {#sec-design-events}
+
+Событийная модель связывает @sec-design-patterns-behavior-observer с представлением и состоянием интерфейса из @sec-web-presentation. Конкретные средства JavaFX вынесены в @sec-appendices-gui-javafx; глава служит обзором модели и направлений самостоятельного исследования.
+
+## Событие, обработчик и очередь {#sec-design-events-dispatch}
+
+## Состояние интерфейса и предметная модель {#sec-design-events-state}
+
+## Поток интерфейса и длительная операция {#sec-design-events-thread}
+
+## Подписка, повторный вход и время жизни обработчика {#sec-design-events-lifecycle}
+
+## Императивное и декларативное описание представления {#sec-design-events-presentation}
+
+## Потоки событий и обратное давление — обзор {#sec-design-events-streams}
+
+## Завершение асинхронной операции после изменения интерфейса {#sec-design-events-stale-result}
+
+## Проверка состояния без запуска графического интерфейса {#sec-design-events-testing}

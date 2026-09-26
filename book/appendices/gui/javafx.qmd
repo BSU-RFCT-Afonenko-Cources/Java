@@ -1,0 +1,17 @@
+# Введение в графические приложения JavaFX {#sec-appendices-gui-javafx}
+
+Необязательное приложение связывает событийную модель с уже изученными понятиями состояния, обработчиков и фоновых задач.
+
+## Подключение JavaFX и запуск приложения {#sec-appendices-gui-javafx-project}
+
+## Сцена, узлы и размещение элементов интерфейса {#sec-appendices-gui-javafx-scene}
+
+## События и обработчики {#sec-appendices-gui-javafx-events}
+
+## Свойства и связывание значений {#sec-appendices-gui-javafx-properties}
+
+## Разделение состояния приложения и представления {#sec-appendices-gui-javafx-state}
+
+## Фоновые задачи и поток интерфейса {#sec-appendices-gui-javafx-background}
+
+См. @sec-design-events, @sec-design-patterns-behavior.

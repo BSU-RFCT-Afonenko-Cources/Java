@@ -1,0 +1,17 @@
+# Локальная учебная база данных H2 {#sec-appendices-tools-h2}
+
+H2 используется как доступное локальное окружение для освоения JDBC без отдельной установки серверной СУБД.
+
+## Встроенный режим, серверный режим и база в памяти {#sec-appendices-tools-h2-modes}
+
+## Строка соединения и время жизни базы {#sec-appendices-tools-h2-connection}
+
+## Создание схемы и загрузка учебных данных {#sec-appendices-tools-h2-schema}
+
+## Консоль H2 и выполнение запросов {#sec-appendices-tools-h2-console}
+
+## Проверка ограничений и транзакций {#sec-appendices-tools-h2-transactions}
+
+## Изоляция тестовых баз и воспроизводимость примеров {#sec-appendices-tools-h2-isolation}
+
+См. @sec-persistence-database.

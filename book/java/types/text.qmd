@@ -1,0 +1,25 @@
+# Строки и представление текста {#sec-java-types-text}
+
+Строка соединяет ссылочную семантику из @sec-java-references с правилами кодирования, необходимыми для @sec-data-io.
+
+## История Unicode и строковой модели Java {#sec-java-types-text-history}
+
+## Кодовая единица, кодовая точка и графема {#sec-java-types-text-unicode}
+
+## UTF-16 в API String и дополнительные символы {#sec-java-types-text-utf16}
+
+## Неизменяемость и совместное использование строк {#sec-java-types-text-immutability}
+
+## Идентичность, равенство и интернирование {#sec-java-types-text-identity}
+
+## Нормализация и визуально совпадающие строки {#sec-java-types-text-normalization}
+
+## Сравнение, локаль и правила предметной области {#sec-java-types-text-comparison}
+
+## String, std::string и строки Python {#sec-java-types-text-languages}
+
+## Внутреннее представление и Compact Strings {#sec-java-types-text-storage}
+
+## Эволюция представления при сохранении API {#sec-java-types-text-evolution}
+
+Какие свойства строки должны сохраниться при смене внутренней кодировки, а какие требуют явного соглашения о нормализации и сравнении?

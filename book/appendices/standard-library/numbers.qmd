@@ -1,0 +1,21 @@
+# Числовые классы и математические функции {#sec-appendices-standard-library-numbers}
+
+Справочный материал по числовым типам стандартной библиотеки, точным вычислениям и управлению округлением.
+
+## Математические функции Math и StrictMath {#sec-appendices-standard-library-numbers-math}
+
+## Проверка переполнения в арифметических операциях {#sec-appendices-standard-library-numbers-checked-arithmetic}
+
+## Классы Double и Float: специальные значения и сравнение {#sec-appendices-standard-library-numbers-floating-point}
+
+## Целые числа произвольной точности: BigInteger {#sec-appendices-standard-library-numbers-big-integer}
+
+## Десятичная арифметика: BigDecimal и MathContext {#sec-appendices-standard-library-numbers-big-decimal}
+
+### Масштаб, точность и режимы округления {#sec-appendices-standard-library-numbers-big-decimal-scale}
+
+### Создание десятичных значений и преобразования типов {#sec-appendices-standard-library-numbers-big-decimal-decimal-input}
+
+## Разбор и форматирование чисел с учётом локали {#sec-appendices-standard-library-numbers-formatting}
+
+См. @sec-java-types-numbers, @sec-java-basics.

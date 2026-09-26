@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Модель памяти и координация доступа к разделяемому состоянию {.unnumbered}
+
+Раздел посвящён гарантиям модели памяти и протоколам взаимодействия потоков. Исследования охватывают видимость состояния, сохранение инвариантов, ожидание, прерывание и предотвращение взаимной блокировки.
+
+::: {#essays}
+:::

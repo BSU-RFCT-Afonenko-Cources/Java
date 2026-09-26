@@ -1,0 +1,31 @@
+# Форматы данных и сериализация {#sec-data-formats}
+
+Внешнее представление данных рассматривается отдельно от их структуры и предметного смысла.
+
+## Текстовые и бинарные форматы {#sec-data-formats-models}
+
+## Структура JSON {#sec-data-formats-json}
+
+## XML, дерево документа и схема {#sec-data-formats-xml}
+
+## Синтаксический анализ и потоковое чтение {#sec-data-formats-parsing}
+
+## Отображение данных в объекты {#sec-data-formats-mapping}
+
+## Валидация и ограничения предметной области {#sec-data-formats-validation}
+
+## Совместимость и развитие формата {#sec-data-formats-evolution}
+
+## Сериализация объектов и ограничения обратимости {#sec-data-formats-serialization}
+
+### Дерево данных и граф объектов: идентичность, общие ссылки и циклы {#sec-data-formats-graphs}
+
+## Схема данных как контракт между версиями программы {#sec-data-formats-schema}
+
+### Неизвестные поля, значения по умолчанию и потеря информации {#sec-data-formats-unknown-fields}
+
+## Исследование свойств encode–decode и decode–encode {#sec-data-formats-round-trip}
+
+### Каноническое представление и смысловая эквивалентность {#sec-data-formats-canonicalization}
+
+См. @sec-java-types-contracts, @sec-java-types-text и @sec-appendices-external-libraries-jackson.

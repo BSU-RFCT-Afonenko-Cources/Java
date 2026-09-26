@@ -1,0 +1,23 @@
+# Исполнители, Future и CompletableFuture {#sec-appendices-standard-library-concurrency-tasks}
+
+Обязательные примеры используют стабильные API выбранной учебной платформы; экспериментальные средства рассматриваются отдельно.
+
+## Представление задачи: Runnable и Callable {#sec-appendices-standard-library-concurrency-tasks-task}
+
+## Исполнители и пулы потоков: ExecutorService и Executors {#sec-appendices-standard-library-concurrency-tasks-executors}
+
+## Получение результата и отмена: Future {#sec-appendices-standard-library-concurrency-tasks-future}
+
+## Композиция вычислений: CompletionStage и CompletableFuture {#sec-appendices-standard-library-concurrency-tasks-completion-stages}
+
+### Последовательное и параллельное объединение результатов {#sec-appendices-standard-library-concurrency-tasks-completion-stages-composition}
+
+### Обработка исключений и ограничение ожидания {#sec-appendices-standard-library-concurrency-tasks-completion-stages-errors}
+
+## Исполнители с виртуальными потоками {#sec-appendices-standard-library-concurrency-tasks-virtual-threads}
+
+## Рекурсивные задачи и ForkJoinPool {#sec-appendices-standard-library-concurrency-tasks-fork-join}
+
+## Завершение исполнителя и управление временем жизни задач {#sec-appendices-standard-library-concurrency-tasks-lifecycle}
+
+См. @sec-concurrency-tasks.

@@ -1,0 +1,33 @@
+# Исполнители, асинхронность и композиция задач {#sec-concurrency-tasks}
+
+Задачи описывают работу и зависимости результатов, а исполнитель управляет её выполнением. Конкретные API собраны в @sec-appendices-standard-library-concurrency-tasks; влияние очередей и повторов обсуждается в @sec-quality-reliability.
+
+## Модель исполнителя и пул потоков {#sec-concurrency-tasks-executors}
+
+## Задача, результат и Future {#sec-concurrency-tasks-results}
+
+## Зависимые задачи и композиция результатов {#sec-concurrency-tasks-composition}
+
+### Граф задач и зависимость критического пути от данных {#sec-concurrency-tasks-task-graph}
+
+## Продолжения и модель async/await {#sec-concurrency-tasks-continuations}
+
+### Корутины C# и Python: запуск, приостановка и возобновление {#sec-concurrency-tasks-coroutines}
+
+### Цикл событий и кооперативное выполнение {#sec-concurrency-tasks-event-loop}
+
+## Исключения, отмена и таймауты {#sec-concurrency-tasks-cancellation}
+
+### Отмена ожидания, запрос прерывания и завершение работы {#sec-concurrency-tasks-cancellation-semantics}
+
+## Время жизни и владелец задач {#sec-concurrency-tasks-ownership}
+
+## Ограничение параллелизма и очереди {#sec-concurrency-tasks-limits}
+
+### Обратное давление и ограничение дефицитного ресурса {#sec-concurrency-tasks-backpressure}
+
+### Очередь, пропускная способность и закон Литтла — обзор {#sec-concurrency-tasks-little-law}
+
+## Fork/join, структурная конкурентность и альтернативные модели — обзор {#sec-concurrency-tasks-overview}
+
+### Один граф задач в разных моделях исполнения {#sec-concurrency-tasks-model-experiment}

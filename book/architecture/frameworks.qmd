@@ -1,0 +1,25 @@
+# Фреймворк Spring и Spring Boot {#sec-architecture-frameworks}
+
+Spring рассматривается как реализация знакомых принципов внедрения зависимостей и обработки веб-запросов, а Spring Boot — как средство запуска и конфигурирования приложения. Ручная сборка объясняется в @sec-architecture-dependencies-assembly, а наблюдение работающего приложения — в @sec-quality-diagnostics.
+
+## Библиотека, фреймворк и инверсия управления {#sec-architecture-frameworks-library}
+
+### Контейнер приложения: Jakarta EE и Spring — обзор {#sec-architecture-frameworks-platform-containers}
+
+## Контейнер Spring и внедрение зависимостей {#sec-architecture-frameworks-container}
+
+## Аннотации, метаданные и рефлексия {#sec-architecture-frameworks-metadata}
+
+### Обработка аннотаций, генерация кода и AOT — обзор {#sec-architecture-frameworks-aot}
+
+## Spring MVC: контроллеры и обработка запросов {#sec-architecture-frameworks-mvc}
+
+## Spring Boot и запуск приложения {#sec-architecture-frameworks-boot}
+
+## Конфигурация и автоматическое связывание компонентов {#sec-architecture-frameworks-configuration}
+
+### Явная сборка, обнаружение компонентов и условия автоконфигурации {#sec-architecture-frameworks-configuration-experiment}
+
+## Модульные и интеграционные тесты {#sec-architecture-frameworks-testing}
+
+## Диагностика конфигурации и границы автоматизации {#sec-architecture-frameworks-diagnostics}

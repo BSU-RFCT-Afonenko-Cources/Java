@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-construction-experiment target="prairielearn" project="/object-model/construction/projects/experiment"}
+### Наблюдение состояния в конструкторном вызове
+
+Для готовой пары Base и Derived, где конструктор Base вызывает переопределяемый report, восстановить журнал значений поля Derived.value: оно имеет инициализатор 7 и присваивание 9 в теле конструктора после super. Сопоставить вызов report из Base и после завершения new Derived().
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- В раннем вызове правильно выявлено значение по умолчанию.
+- После завершения конструирования правильно определены итоговое значение и последовательность событий.
+
+**Границы постановки:** Обычный конструктор без пролога Java 25; определения и журнал предоставляются. Динамическая загрузка и конкуренция исключены.
+:::
+::::
+
+:::: {#exr-essay-construction-test-design target="prairielearn" project="/object-model/construction/projects/test-design"}
+### Проверка готовности объекта перед callback
+
+Написать тесты для фабрики Widget.create(int size, Observer observer), обязанной уведомить observer ровно один раз после установки size и состояния ready. Выявить преждевременный callback и его повторный вызов.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная фабрика вызывает наблюдателя один раз с готовым объектом.
+- Тесты обнаруживают оба нарушения протокола создания.
+
+**Границы постановки:** size положителен, Observer не выбрасывает исключений; доступ к size и ready предоставлен публичным интерфейсом заготовки.
+:::
+::::
+
+:::: {#exr-essay-construction-implementation target="prairielearn" project="/object-model/construction/projects/implementation"}
+### Разделение конструирования и уведомления
+
+Исправить фабрику Widget.create(int size, Observer observer): полностью создать Widget, установить его допустимое состояние и затем выполнить единственный callback. Для size &lt;= 0 выбросить IllegalArgumentException до создания наблюдаемого объекта.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Уведомление происходит только после установления всех заданных инвариантов.
+- Недопустимый размер не вызывает уведомлений, успешное создание вызывает ровно одно.
+
+**Границы постановки:** Готовый каркас включает поля, конструктор и Observer; достаточно фабрики и приватного способа создания. Потокобезопасная публикация не требуется.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-construction-experiment
+2. @exr-essay-construction-test-design
+3. @exr-essay-construction-implementation
+:::
+
+## Источники для подготовки
+
+- [JLS §12: выполнение, создание и инициализация классов](https://docs.oracle.com/javase/specs/jls/se25/html/jls-12.html)
+- [Oracle Java 25 Language Updates: Flexible Constructor Bodies](https://docs.oracle.com/en/java/javase/25/language/flexible-constructor-bodies.html)
+
+::::::

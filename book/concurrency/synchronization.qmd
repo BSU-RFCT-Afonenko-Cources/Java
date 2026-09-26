@@ -1,0 +1,29 @@
+# Синхронизация и модель памяти Java {#sec-concurrency-synchronization}
+
+Корректная работа с разделяемым состоянием требует согласовать атомарность, видимость изменений и порядок событий. Обоснование эксперимента опирается на @sec-development-testing-limits; распределённая согласованность рассматривается в @sec-quality-reliability.
+
+## Общие данные и составные операции {#sec-concurrency-synchronization-shared}
+
+### Data race и логическая гонка {#sec-concurrency-synchronization-race-models}
+
+## Мониторы и synchronized {#sec-concurrency-synchronization-monitor}
+
+## Видимость изменений и volatile {#sec-concurrency-synchronization-visibility}
+
+## Java Memory Model и happens-before {#sec-concurrency-synchronization-jmm}
+
+### Частичный порядок событий и последовательная согласованность {#sec-concurrency-synchronization-event-order}
+
+## Безопасная публикация объектов {#sec-concurrency-synchronization-publication}
+
+## Защита инварианта и атомарные операции {#sec-concurrency-synchronization-invariants}
+
+### Линеаризуемость операции — обзор {#sec-concurrency-synchronization-linearizability}
+
+### Две атомарные переменные и общий инвариант {#sec-concurrency-synchronization-compound-invariant}
+
+## Взаимная блокировка и голодание {#sec-concurrency-synchronization-liveness}
+
+## Неизменяемость, изоляция и передача данных {#sec-concurrency-synchronization-alternatives}
+
+### Координированный контрпример и пределы стресс-теста {#sec-concurrency-synchronization-experiment}

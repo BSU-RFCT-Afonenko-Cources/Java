@@ -1,0 +1,19 @@
+# Доступ к базам данных через JDBC {#sec-appendices-standard-library-sql-jdbc}
+
+В центре внимания — Java-интерфейсы, отображение результатов и управление ресурсами; теория реляционных баз данных относится к параллельному курсу.
+
+## Соединения: DriverManager, DataSource и Connection {#sec-appendices-standard-library-sql-jdbc-connections}
+
+## Подготовленные запросы и параметры: PreparedStatement {#sec-appendices-standard-library-sql-jdbc-statements}
+
+## Чтение результатов: ResultSet {#sec-appendices-standard-library-sql-jdbc-results}
+
+## SQL NULL и преобразование типов {#sec-appendices-standard-library-sql-jdbc-null}
+
+## Управление транзакцией: auto-commit, commit и rollback {#sec-appendices-standard-library-sql-jdbc-transactions}
+
+## Диагностика: SQLException, SQLState и коды драйвера {#sec-appendices-standard-library-sql-jdbc-errors}
+
+## Закрытие ресурсов и владение соединением {#sec-appendices-standard-library-sql-jdbc-resources}
+
+См. @sec-persistence-database.

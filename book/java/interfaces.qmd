@@ -1,0 +1,25 @@
+# Интерфейсы и поведенческая подтипизация {#sec-java-interfaces}
+
+Интерфейс задаёт роль объекта и связывает полиморфный вызов из @sec-java-inheritance с обязательствами каждой реализации.
+
+## Объявление и реализация интерфейса {#sec-java-interfaces-declaration}
+
+## Полиморфный клиент {#sec-java-interfaces-polymorphism}
+
+## Абстрактные, default-, static- и private-методы {#sec-java-interfaces-members}
+
+## Наследование интерфейсов и разрешение конфликтов {#sec-java-interfaces-inheritance}
+
+## Принцип подстановки Лисков {#sec-java-interfaces-lsp}
+
+### Предусловия, постусловия, инварианты и история изменений {#sec-java-interfaces-behavior}
+
+## Композиция и делегирование {#sec-java-interfaces-composition}
+
+## Выбор между интерфейсом и абстрактным классом {#sec-java-interfaces-choice}
+
+## Номинальная и структурная подтипизация {#sec-java-interfaces-comparison}
+
+## Расширение набора вариантов и добавление новых операций {#sec-java-interfaces-expression-problem}
+
+Как различается цена нового варианта и новой операции у открытой иерархии интерфейсов и закрытой модели из @sec-java-types-contracts-sums?

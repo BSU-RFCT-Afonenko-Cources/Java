@@ -1,0 +1,62 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-views-snapshots-experiment target="prairielearn" project="/generics-collections/views-snapshots/projects/experiment"}
+### Сопоставление представления и снимка
+
+Для исходного массива строк сравнить Arrays.asList, его unmodifiableList-обёртку и List.copyOf. Изменить элемент исходного массива и указать содержимое трёх результатов; отдельно определить исходы add и set через каждый результат.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Правильно установлена зависимость содержимого от исходного массива.
+- Различены запрет изменения размера и запрет любой структурной записи через ссылку.
+
+**Границы постановки:** Массив непустой, элементы не null; все результаты получены до изменения. Конкретные классы реализаций не проверяются.
+:::
+::::
+
+:::: {#exr-essay-views-snapshots-test-design target="prairielearn" project="/generics-collections/views-snapshots/projects/test-design"}
+### Проверка неизменяемого снимка списка
+
+Написать тесты для snapshot(`List<String>` input): результат сохраняет исходный порядок, не меняется после изменения input и запрещает add и set. Выявить возврат input и unmodifiableList без отделения от исходного контейнера.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректный снимок проходит проверки значений и запрета записи.
+- Обнаружена внешняя изменяемость через вход или сам результат.
+
+**Границы постановки:** input и элементы не null, вход изменяемый; идентичность объектов списков не используется как критерий.
+:::
+::::
+
+:::: {#exr-essay-views-snapshots-implementation target="prairielearn" project="/generics-collections/views-snapshots/projects/implementation"}
+### Реализация снимка установленной глубины
+
+Реализовать `List<String>` snapshot(`List<String>` input), сохраняющий порядок и повторы, независимый от последующих структурных изменений input и запрещающий изменение результата. Null в самом списке или среди элементов должен приводить к NullPointerException.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Содержимое снимка остаётся стабильным при изменении исходного контейнера.
+- Попытки изменения результата отклоняются, а политика null соблюдается.
+
+**Границы постановки:** Элементы String неизменяемы; глубокое копирование объектов и создание обязательно новой ссылки списка не требуются.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-views-snapshots-experiment
+2. @exr-essay-views-snapshots-test-design
+3. @exr-essay-views-snapshots-implementation
+:::
+
+## Источники для подготовки
+
+- [Arrays: копирование, сравнение и asList](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html)
+- [Collections: обёртки и представления коллекций](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collections.html)
+- [List: неизменяемые списки, copyOf, subList](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html)
+
+::::::

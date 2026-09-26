@@ -1,0 +1,23 @@
+# Коллекции Java {#sec-appendices-standard-library-collections}
+
+Справочный обзор интерфейсов коллекций, их реализаций и основных операций.
+
+## Интерфейсы Collection, List, Set, Queue и Deque {#sec-appendices-standard-library-collections-interfaces}
+
+## Интерфейс Map и представления отображения {#sec-appendices-standard-library-collections-maps}
+
+## Выбор реализации коллекции {#sec-appendices-standard-library-collections-implementations}
+
+### ArrayList и LinkedList {#sec-appendices-standard-library-collections-implementations-lists}
+
+### Хешированные и упорядоченные множества и отображения {#sec-appendices-standard-library-collections-implementations-sets-maps}
+
+## Сравнение элементов: Comparable и Comparator {#sec-appendices-standard-library-collections-ordering}
+
+## Равенство и хеширование ключей {#sec-appendices-standard-library-collections-keys}
+
+## Копии, представления и немодифицируемые коллекции {#sec-appendices-standard-library-collections-views}
+
+## Итераторы, обход и удаление элементов {#sec-appendices-standard-library-collections-iteration}
+
+См. @sec-data-collections, @sec-java-generics.

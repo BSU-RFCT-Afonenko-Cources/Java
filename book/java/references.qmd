@@ -1,0 +1,35 @@
+# Ссылочные типы и управление памятью {#sec-java-references}
+
+Модель ссылок служит общей основой для @sec-java-types-arrays, @sec-java-types-text и @sec-java-runtime-memory.
+
+## Примитивное значение и значение ссылки {#sec-java-references-values}
+
+### Значение, идентичность и изменяемое состояние {#sec-java-references-identity}
+
+### Значение null и разыменование ссылки {#sec-java-references-null}
+
+### Классы-обёртки, boxing и unboxing {#sec-java-references-boxing}
+
+## Массивы и проверка границ {#sec-java-references-arrays}
+
+## Строковые значения и неизменяемость {#sec-java-references-strings}
+
+## Передача параметров по значению {#sec-java-references-parameters}
+
+## Разделяемые ссылки и копирование объектов {#sec-java-references-aliasing}
+
+### Поверхностная, глубокая и защитная копия {#sec-java-references-copying}
+
+### Object.clone, Cloneable и явная операция копирования {#sec-java-references-clone}
+
+## Стек вызовов и куча {#sec-java-references-memory}
+
+## Достижимость объектов и сборка мусора {#sec-java-references-gc}
+
+## Время жизни и владение памятью в Java и C++ {#sec-java-references-comparison}
+
+### Типы значений C# и привязка имён Python {#sec-java-references-languages}
+
+## Ссылочная семантика и место хранения {#sec-java-references-storage}
+
+Какие изменения видны через общую ссылку после присваивания, вызова метода и копирования, независимо от физического размещения объекта?

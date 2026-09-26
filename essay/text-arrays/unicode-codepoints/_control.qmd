@@ -1,0 +1,60 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-unicode-codepoints-experiment target="prairielearn" project="/text-arrays/unicode-codepoints/projects/experiment"}
+### Различение единиц длины строки
+
+Предъявить корректную строку UTF-16, у которой String.length превышает число кодовых точек, и строку контроля с совпадающими величинами. Указать обе длины и результат выделения первого префикса длиной одна кодовая точка.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Основная строка содержит дополнительную кодовую точку и различает меры длины.
+- Контроль и оба префикса определены без повреждения суррогатных пар.
+
+**Границы постановки:** Вход не содержит непарных суррогатов; передача строк должна сохранять дополнительные кодовые точки.
+:::
+::::
+
+:::: {#exr-essay-unicode-codepoints-test-design target="prairielearn" project="/text-arrays/unicode-codepoints/projects/test-design"}
+### Проверка выделения префикса Unicode
+
+Написать тесты для String prefix(String s, int count), возвращающего первые min(count, число кодовых точек) кодовых точек. Выявить обрезку через substring с индексом count и ошибку обработки пустой строки.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная реализация принимается для пустых и непустых строк.
+- Обнаружены разрыв суррогатной пары и ошибка нулевой длины.
+
+**Границы постановки:** s не null, корректный UTF-16; count &gt;= 0. Графемная сегментация не требуется.
+:::
+::::
+
+:::: {#exr-essay-unicode-codepoints-implementation target="prairielearn" project="/text-arrays/unicode-codepoints/projects/implementation"}
+### Реализация префикса по кодовым точкам
+
+Реализовать String prefix(String s, int count) по числу кодовых точек. При count &gt;= фактической длины вернуть строку с тем же содержимым, при count == 0 — пустую строку, при отрицательном count выбросить IllegalArgumentException.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Обычные и дополнительные кодовые точки сохраняются в правильном порядке.
+- Корректно обработаны пустой вход, граничная длина и отрицательный count.
+
+**Границы постановки:** s не null и не содержит непарных суррогатов; идентичность возвращённого объекта не проверяется.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-unicode-codepoints-experiment
+2. @exr-essay-unicode-codepoints-test-design
+3. @exr-essay-unicode-codepoints-implementation
+:::
+
+## Источники для подготовки
+
+- [String: UTF-16, кодовые точки, интернирование и преобразования](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html)
+
+::::::

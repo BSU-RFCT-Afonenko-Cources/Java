@@ -1,0 +1,19 @@
+plugins { id 'java' }
+
+repositories { mavenCentral() }
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 17 }
+
+if (providers.gradleProperty('reference').isPresent()) {
+    sourceSets.main.java.setSrcDirs(['../reference'])
+}
+if (providers.gradleProperty('grading').isPresent()) {
+    sourceSets.test.java.srcDir('../tests')
+}
+test { useJUnitPlatform() }

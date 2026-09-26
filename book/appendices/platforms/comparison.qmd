@@ -1,0 +1,29 @@
+# Языки и платформы для сравнительных экспериментов {#sec-appendices-platforms-comparison}
+
+Справочные материалы помогают воспроизвести сравнения моделей типов, памяти и выполнения из основной части книги.
+
+## C++: время жизни, владение ресурсами и шаблоны {#sec-appendices-platforms-comparison-cpp}
+
+## C# и .NET: типы, обобщения и асинхронные методы {#sec-appendices-platforms-comparison-csharp}
+
+## Python: динамическая типизация, протоколы и корутины {#sec-appendices-platforms-comparison-python}
+
+## Go: интерфейсы, goroutines и каналы {#sec-appendices-platforms-comparison-go}
+
+## Rust: владение, заимствование и Future {#sec-appendices-platforms-comparison-rust}
+
+## Erlang и Elixir: процессы, сообщения и supervision {#sec-appendices-platforms-comparison-actors}
+
+## Haskell и GHCi: алгебраические типы и описание эффектов {#sec-appendices-platforms-comparison-haskell}
+
+## Idris 2: проверка примеров с Vect и Fin {#sec-appendices-platforms-comparison-idris}
+
+## Языки для системных и параллельных вычислений {#sec-appendices-platforms-comparison-parallel-languages}
+
+### Odin: явное управление памятью и потоками {#sec-appendices-platforms-comparison-parallel-languages-odin}
+
+### Mojo: представление данных, SIMD и GPU {#sec-appendices-platforms-comparison-parallel-languages-mojo}
+
+### Chapel и X10: задачи и размещение данных {#sec-appendices-platforms-comparison-parallel-languages-pgas}
+
+См. @sec-java-types-contracts, @sec-java-runtime-memory, @sec-concurrency-threads.

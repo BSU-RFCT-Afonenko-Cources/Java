@@ -1,0 +1,25 @@
+# Диагностика и наблюдаемость приложения {#sec-quality-diagnostics}
+
+Диагностика связывает гипотезу о неисправности с доступными данными о выполнении программы. Различение модели и наблюдения опирается на @sec-development-testing-limits; средства диагностики собраны в @sec-appendices-tools-diagnostics.
+
+## Журналирование и уровни сообщений {#sec-quality-diagnostics-logging}
+
+## Стек исключения и диагностический контекст {#sec-quality-diagnostics-exceptions}
+
+## Метрики, пропускная способность и задержка {#sec-quality-diagnostics-metrics}
+
+### Распределение задержек и хвостовые значения {#sec-quality-diagnostics-latency-distribution}
+
+## Трассировка и идентификатор запроса {#sec-quality-diagnostics-tracing}
+
+## Проверки состояния и готовности {#sec-quality-diagnostics-health}
+
+## Профилирование CPU и памяти — обзор {#sec-quality-diagnostics-profiling}
+
+### Прогрев JVM, JIT и сборка мусора {#sec-quality-diagnostics-runtime-effects}
+
+## Воспроизводимый эксперимент и оценка результата {#sec-quality-diagnostics-experiments}
+
+### Наблюдение, гипотеза и условия воспроизводимости {#sec-quality-diagnostics-hypothesis}
+
+### Что измеряет микробенчмарк {#sec-quality-diagnostics-microbenchmarks}

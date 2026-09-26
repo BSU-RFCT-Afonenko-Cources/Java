@@ -1,0 +1,33 @@
+# Пакеты, зависимости и сборка Java-проектов {#sec-development-build}
+
+Сборка рассматривается от ручной компиляции и JAR до управления зависимостями и жизненного цикла Maven. Границы модуля разбираются в @sec-architecture-modules, а дополнительные системы сборки — в @sec-appendices-tools-alternatives.
+
+## Пакеты, import и структура исходников {#sec-development-build-packages}
+
+## Classpath при компиляции и выполнении {#sec-development-build-classpath}
+
+### Загрузка классов и конфликт версий библиотеки {#sec-development-build-linking}
+
+### DLL hell и изоляция зависимостей — обзор {#sec-development-build-dependency-isolation}
+
+## Библиотеки и упаковка JAR {#sec-development-build-jar}
+
+## Зависимости, репозитории и версии артефактов {#sec-development-build-dependencies}
+
+## Проект Maven и файл POM {#sec-development-build-maven}
+
+## Жизненный цикл, плагины и области зависимостей {#sec-development-build-lifecycle}
+
+## Граф сборки и инкрементальная пересборка {#sec-development-build-graph}
+
+### Топологический порядок и готовность задачи {#sec-development-build-topological-order}
+
+### Планирование сборки и решение о пересборке {#sec-development-build-scheduler-rebuilder}
+
+## Совместимость, кеширование и воспроизводимость {#sec-development-build-reproducibility}
+
+### Совместимость исходного кода, бинарного интерфейса и поведения {#sec-development-build-compatibility}
+
+### Детерминированность, герметичность и побитовая воспроизводимость {#sec-development-build-reproducibility-models}
+
+### Эксперимент со скрытым входом и ошибочным попаданием в кеш {#sec-development-build-cache-experiment}

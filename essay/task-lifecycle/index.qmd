@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Композиция задач и управление жизненным циклом вычислений {.unnumbered}
+
+Исследования рассматривают выполнение и композицию конкурентных задач. В центре внимания находятся продвижение вычислений, распространение ошибок, отмена, контекст выполнения и ограничение используемых ресурсов.
+
+::: {#essays}
+:::

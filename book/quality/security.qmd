@@ -1,0 +1,25 @@
+# Основы безопасности Java-приложений {#sec-quality-security}
+
+Безопасность приложения рассматривается через проверку входов, разрешений и контекста использования данных. Представление программы связано с @sec-java-platform; независимые отрицательные сценарии — с @sec-development-testing.
+
+## Границы доверия и модель угроз {#sec-quality-security-trust}
+
+## Проверка и ограничение входных данных {#sec-quality-security-validation}
+
+## Аутентификация и авторизация {#sec-quality-security-identity}
+
+## Разрешение на действие с конкретным объектом {#sec-quality-security-access}
+
+## SQL-инъекция и параметризация {#sec-quality-security-injection}
+
+## XSS и контекстное кодирование вывода {#sec-quality-security-xss}
+
+## Конфигурация, секреты и диагностические сообщения {#sec-quality-security-secrets}
+
+### Байткод, декомпиляция и восстановление структуры программы — обзор {#sec-quality-security-reverse-engineering}
+
+### Обфускация, целостность и пределы защиты клиента — обзор {#sec-quality-security-obfuscation}
+
+### Секрет в клиентском приложении и граница доверия {#sec-quality-security-client-secrets}
+
+## Негативные тесты и проверка разрешений {#sec-quality-security-testing}

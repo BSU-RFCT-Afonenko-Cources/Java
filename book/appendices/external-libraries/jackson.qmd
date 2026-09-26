@@ -1,0 +1,19 @@
+# Работа с JSON с помощью Jackson {#sec-appendices-external-libraries-jackson}
+
+Приложение содержит справочный материал по отображению JSON в Java-типы и настройке сериализации.
+
+## Подключение библиотеки и настройка ObjectMapper {#sec-appendices-external-libraries-jackson-configuration}
+
+## Древовидная модель: JsonNode {#sec-appendices-external-libraries-jackson-tree}
+
+## Отображение JSON в классы и record {#sec-appendices-external-libraries-jackson-mapping}
+
+## Настройка имён и представления свойств {#sec-appendices-external-libraries-jackson-annotations}
+
+## Отсутствующие, неизвестные и обязательные поля {#sec-appendices-external-libraries-jackson-compatibility}
+
+## Последовательное чтение и запись JSON {#sec-appendices-external-libraries-jackson-streaming}
+
+## Ошибки преобразования и проверка предметных ограничений {#sec-appendices-external-libraries-jackson-validation}
+
+См. @sec-data-formats.

@@ -1,0 +1,27 @@
+# Сетевое взаимодействие и протокол HTTP {#sec-web-http}
+
+Сетевой вызов рассматривается как обмен сообщениями между участниками с независимыми состояниями и отказами. Готовый HTTP-клиент описан в @sec-appendices-standard-library-net-http-client; сохранение эффекта при повторе — в @sec-quality-reliability-retry.
+
+## Адреса, имена, порты и соединения {#sec-web-http-network}
+
+## Транспорт и границы сообщений {#sec-web-http-transport}
+
+## Запрос и ответ HTTP {#sec-web-http-http}
+
+## Методы, заголовки и коды состояния {#sec-web-http-methods}
+
+### Безопасные и идемпотентные методы {#sec-web-http-safe-idempotent}
+
+## Ресурсы, URI и представления {#sec-web-http-representation}
+
+## Транспортные ошибки и частичный отказ {#sec-web-http-failure}
+
+## Таймауты, повторы и идемпотентность {#sec-web-http-retries}
+
+### Потерянный ответ и неопределённый исход операции {#sec-web-http-lost-response}
+
+## REST, RPC и защищённое соединение — обзор {#sec-web-http-styles}
+
+### REST, RPC и обмен документами: границы сравнения {#sec-web-http-service-models}
+
+### SOAP, WSDL и контракт сообщения — исторический обзор {#sec-web-http-document-services}
