@@ -1,0 +1,62 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-normalization-locale-experiment target="prairielearn" project="/text-arrays/normalization-locale/projects/experiment"}
+### Различение эквивалентности и сходства строк
+
+Предъявить две разные строки, совпадающие после NFC, и две строки, остающиеся различными после NFC. Указать нормализованный результат каждой пары и число кодовых точек до преобразования.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Первая пара действительно канонически эквивалентна, но исходные строки не равны.
+- Вторая пара сохраняет различие, а результаты нормализации указаны правильно.
+
+**Границы постановки:** Корректные Unicode-строки; визуальную похожесть автоматически устанавливать не требуется.
+:::
+::::
+
+:::: {#exr-essay-normalization-locale-test-design target="prairielearn" project="/text-arrays/normalization-locale/projects/test-design"}
+### Проверка независимости ключа от локали
+
+Написать тесты для key(s) = NFC(s.toLowerCase(Locale.ROOT)). Выявить пропуск нормализации и использование default locale вместо Locale.ROOT. В каждом тесте восстанавливать глобальную локаль после временного изменения.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная реализация принимается для канонически эквивалентных входов.
+- Выявлены обе ошибки без загрязнения состояния остальных тестов.
+
+**Границы постановки:** Тесты выполняются последовательно в отдельной JVM; стенд разрешает временно устанавливать Locale.forLanguageTag("tr"). s не null.
+:::
+::::
+
+:::: {#exr-essay-normalization-locale-implementation target="prairielearn" project="/text-arrays/normalization-locale/projects/implementation"}
+### Реализация воспроизводимого текстового ключа
+
+Реализовать String key(String s): сначала преобразовать регистр через toLowerCase(Locale.ROOT), затем применить NFC. Не удалять пробелы и знаки, не заменять визуально похожие символы и не использовать настройки локали по умолчанию.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Результат соответствует указанной последовательности преобразований.
+- Результат не зависит от default locale и сохраняет различия, которые контракт не устраняет.
+
+**Границы постановки:** s не null; требуется именно данный порядок операций. Полное Unicode case folding не входит в задание.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-normalization-locale-experiment
+2. @exr-essay-normalization-locale-test-design
+3. @exr-essay-normalization-locale-implementation
+:::
+
+## Источники для подготовки
+
+- [String: UTF-16, кодовые точки, интернирование и преобразования](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html)
+- [Normalizer: формы нормализации Unicode](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/Normalizer.html)
+- [Locale: явная и глобальная локаль](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html)
+
+::::::

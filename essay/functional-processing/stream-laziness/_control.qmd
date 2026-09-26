@@ -1,0 +1,60 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-stream-laziness-experiment target="prairielearn" project="/functional-processing/stream-laziness/projects/experiment"}
+### Наблюдение необязательного промежуточного действия
+
+На закреплённом JDK сравнить stream().peek(recorder).count() для готового ArrayList и последовательный forEach(recorder). Указать размер входа, итог count и журналы вызовов; отдельно отметить, какой результат задан контрактом, а какие пропуски промежуточного действия наблюдаются на стенде.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Эксперимент правильно фиксирует независимость count от обязательности вызовов peek.
+- Контрольный обход выполняет требуемое действие для каждого элемента.
+
+**Границы постановки:** Проверка журнала peek привязана к закреплённой сборке JDK; универсальный запрет исполнения peek не утверждается.
+:::
+::::
+
+:::: {#exr-essay-stream-laziness-test-design target="prairielearn" project="/functional-processing/stream-laziness/projects/test-design"}
+### Проверка обязательной регистрации элементов
+
+Написать тесты для long registerAll(`List<String>` input, `Consumer<String>` sink): метод передаёт каждый элемент в sink ровно один раз в исходном порядке и возвращает размер списка. Выявить peek(...).count() и раннее завершение после первого элемента.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная реализация принимается для пустого списка и списка с повторами.
+- Обнаружены пропущенные вызовы и нарушение полноты обхода.
+
+**Границы постановки:** Список и элементы не null; sink только пишет журнал и не выбрасывает исключений. Проверка дефекта peek закреплена за выбранным JDK.
+:::
+::::
+
+:::: {#exr-essay-stream-laziness-implementation target="prairielearn" project="/functional-processing/stream-laziness/projects/implementation"}
+### Реализация полного обхода с обязательным действием
+
+Реализовать long registerAll(`List<String>` input, `Consumer<String>` sink), вызывающий sink для каждого элемента ровно один раз и в исходном порядке, включая повторы, после чего возвращающий число переданных элементов.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Журнал содержит все элементы в заданном порядке без пропусков и дублей.
+- Возвращённое число правильно для пустых и непустых входов.
+
+**Границы постановки:** input и sink не null, элементы не null; sink не выбрасывает исключений и не изменяет input. Параллельная обработка не требуется.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-stream-laziness-experiment
+2. @exr-essay-stream-laziness-test-design
+3. @exr-essay-stream-laziness-implementation
+:::
+
+## Источники для подготовки
+
+- [Stream: ленивость, эффекты и свёртки](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html)
+
+::::::

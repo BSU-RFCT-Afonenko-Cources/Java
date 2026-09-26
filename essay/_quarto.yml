@@ -1,0 +1,127 @@
+project:
+  type: book
+  output-dir: _book/student
+  resources:
+    - "!**/projects/**"
+    - "!**/_control.qmd"
+    - "!_generated/**"
+    - "!tools/**"
+    - "!docs/**"
+profile:
+  default: student
+  group:
+    - [student, full]
+course:
+  schema: "1.0"
+  id: java-essays
+  validate: true
+  view: student
+prairielearn:
+  assessment-defaults:
+    attempts: 3
+    pass:
+      at-least: 2
+    assignment:
+      mode: assessment-id
+filters:
+  - course-core
+  - course-prairielearn
+book:
+  title: "Исследовательские рефераты по Core Java"
+  chapters:
+    - index.qmd
+    - part: numbers/index.qmd
+      chapters:
+        - numbers/integer-promotions/index.qmd
+        - numbers/cyclic-indices/index.qmd
+        - numbers/floating-equality/index.qmd
+        - numbers/boxing-null/index.qmd
+        - numbers/evaluation-order/index.qmd
+    - part: text-arrays/index.qmd
+      chapters:
+        - text-arrays/unicode-codepoints/index.qmd
+        - text-arrays/normalization-locale/index.qmd
+        - text-arrays/string-identity/index.qmd
+        - text-arrays/array-covariance/index.qmd
+        - text-arrays/matrix-copying/index.qmd
+        - text-arrays/unicode-demonstration/index.qmd
+    - part: object-model/index.qmd
+      chapters:
+        - object-model/overload-dispatch/index.qmd
+        - object-model/construction/index.qmd
+        - object-model/equality-inheritance/index.qmd
+        - object-model/record-components/index.qmd
+        - object-model/sealed-switch/index.qmd
+    - part: generics-collections/index.qmd
+      chapters:
+        - generics-collections/generic-variance/index.qmd
+        - generics-collections/type-erasure/index.qmd
+        - generics-collections/mutable-keys/index.qmd
+        - generics-collections/sorted-equality/index.qmd
+        - generics-collections/views-snapshots/index.qmd
+    - part: functional-processing/index.qmd
+      chapters:
+        - functional-processing/lambda-capture/index.qmd
+        - functional-processing/stream-laziness/index.qmd
+        - functional-processing/reduction-laws/index.qmd
+        - functional-processing/optional-evaluation/index.qmd
+        - functional-processing/map-collisions/index.qmd
+    - part: failures-boundaries/index.qmd
+      chapters:
+        - failures-boundaries/finally-control/index.qmd
+        - failures-boundaries/suppressed-exceptions/index.qmd
+        - failures-boundaries/failure-atomicity/index.qmd
+        - failures-boundaries/constant-inlining/index.qmd
+        - failures-boundaries/charset-decoding/index.qmd
+    - part: shared-state/index.qmd
+      chapters:
+        - shared-state/safe-publication/index.qmd
+        - shared-state/atomic-invariants/index.qmd
+        - shared-state/monitor-protocols/index.qmd
+        - shared-state/cooperative-interruption/index.qmd
+        - shared-state/lock-order/index.qmd
+    - part: task-lifecycle/index.qmd
+      chapters:
+        - task-lifecycle/executor-progress/index.qmd
+        - task-lifecycle/future-composition/index.qmd
+        - task-lifecycle/timeouts-cancellation/index.qmd
+        - task-lifecycle/thread-context/index.qmd
+        - task-lifecycle/virtual-resource-limits/index.qmd
+    - part: collection-contracts/index.qmd
+      chapters:
+        - collection-contracts/concurrent-map/index.qmd
+        - collection-contracts/iteration-models/index.qmd
+        - collection-contracts/collector-laws/index.qmd
+        - collection-contracts/spliterator-contract/index.qmd
+        - collection-contracts/comparator-laws/index.qmd
+    - part: io-networking/index.qmd
+      chapters:
+        - io-networking/tcp-framing/index.qmd
+        - io-networking/socket-half-close/index.qmd
+        - io-networking/http-outcomes/index.qmd
+        - io-networking/bytebuffer-state/index.qmd
+        - io-networking/path-resolution/index.qmd
+    - part: runtime-types/index.qmd
+      chapters:
+        - runtime-types/classloader-identity/index.qmd
+        - runtime-types/reflective-types/index.qmd
+        - runtime-types/module-access/index.qmd
+        - runtime-types/dynamic-proxies/index.qmd
+        - runtime-types/binary-compatibility/index.qmd
+    - part: lifecycle-measurement/index.qmd
+      chapters:
+        - lifecycle-measurement/time-models/index.qmd
+        - lifecycle-measurement/serialization-graphs/index.qmd
+        - lifecycle-measurement/explicit-cleanup/index.qmd
+        - lifecycle-measurement/microbenchmark-design/index.qmd
+        - lifecycle-measurement/regex-literals/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    number-depth: 1
+    code-copy: true
+    code-tools: false
+lang: ru

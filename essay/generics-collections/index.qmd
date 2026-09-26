@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Обобщённые типы и семантика коллекций {.unnumbered}
+
+Исследования посвящены границам типобезопасности обобщённых API и контрактам коллекций. Особое внимание уделяется тому, как изменяемость, равенство и представления данных влияют на корректность операций.
+
+::: {#essays}
+:::

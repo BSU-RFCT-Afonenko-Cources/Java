@@ -1,0 +1,62 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-sorted-equality-experiment target="prairielearn" project="/generics-collections/sorted-equality/projects/experiment"}
+### Различение уникальности числовых представлений
+
+Выбрать два BigDecimal, равных по compareTo, но не по equals. Добавить их в HashSet и TreeSet с естественным порядком, указать размеры множеств и результаты проверки принадлежности каждого значения.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Пара действительно различает масштаб представления при одном численном значении.
+- Размеры и принадлежность правильно выведены из отношений соответствующих коллекций.
+
+**Границы постановки:** BigDecimal создаются из десятичных строк; null и пользовательский comparator в данном эксперименте исключены.
+:::
+::::
+
+:::: {#exr-essay-sorted-equality-test-design target="prairielearn" project="/generics-collections/sorted-equality/projects/test-design"}
+### Проверка каталога с сохранением масштаба
+
+Написать тесты для catalog(`Collection<BigDecimal>` input), возвращающего отсортированное множество и сохраняющего различия equals. Порядок: сначала численное значение, затем scale. Выявить использование одного естественного порядка без второго критерия.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректный каталог сохраняет требуемое число различных представлений.
+- Обнаружено слияние разных по equals значений с одинаковой численной величиной.
+
+**Границы постановки:** Вход и элементы не null; одинаковые по equals значения должны объединяться. Десятичные числа задаются строками.
+:::
+::::
+
+:::: {#exr-essay-sorted-equality-implementation target="prairielearn" project="/generics-collections/sorted-equality/projects/implementation"}
+### Реализация согласованного порядка каталога
+
+Реализовать comparator для BigDecimal: сначала сравнивать численное значение, при равенстве — scale. Использовать его для построения TreeSet, сохраняющего все различия equals, но объединяющего полностью равные представления.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Численные значения расположены в правильном порядке с устойчивым вторичным критерием.
+- Нулевой результат comparator соответствует equals для всех разрешённых входов.
+
+**Границы постановки:** null отсутствует; обработка масштаба не изменяет сами BigDecimal и не выполняет округление.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-sorted-equality-experiment
+2. @exr-essay-sorted-equality-test-design
+3. @exr-essay-sorted-equality-implementation
+:::
+
+## Источники для подготовки
+
+- [TreeSet: эквивалентность по порядку](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeSet.html)
+- [BigDecimal: различие численного порядка и equals](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html)
+- [Comparator: законы отношения сравнения](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html)
+
+::::::

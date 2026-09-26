@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-boxing-null-experiment target="prairielearn" project="/numbers/boxing-null/projects/experiment"}
+### Обнаружение неявной распаковки
+
+Для заданного метода Integer select(boolean use, Integer value), возвращающего use ? value : 0, указать вход, приводящий к NullPointerException, и контрольный вход с тем же value, успешно возвращающий результат. Зафиксировать исход каждого запуска.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Выбран вход, вызывающий распаковку null в вычисляемой ветви.
+- Контрольный вход подтверждает зависимость исхода от выбранной ветви.
+
+**Границы постановки:** Стенд содержит именно указанное выражение; наблюдения кэша Integer не используются как критерий.
+:::
+::::
+
+:::: {#exr-essay-boxing-null-test-design target="prairielearn" project="/numbers/boxing-null/projects/test-design"}
+### Проверка сравнения nullable-чисел
+
+Написать тесты для boolean same(Integer a, Integer b): два null равны, один null не равен числу, два числа сравниваются по значению. Обнаружить реализацию со сравнением ссылок и реализацию с безусловной распаковкой.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректный метод проходит проверки значений и null.
+- Выявлены дефекты идентичности и нежелательной распаковки.
+
+**Границы постановки:** Стенд предоставляет способ получить различные объекты Integer с одинаковым значением независимо от диапазона кэша; устаревшие конструкторы студенту не требуются.
+:::
+::::
+
+:::: {#exr-essay-boxing-null-implementation target="prairielearn" project="/numbers/boxing-null/projects/implementation"}
+### Реализация явной политики отсутствующего значения
+
+Реализовать Integer choose(boolean preferred, Integer value, Integer fallback): при preferred вернуть value, даже если он null; иначе вернуть fallback без преобразования в примитив. Сохранить числовые значения и null для всех сочетаний аргументов.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Результат соответствует выбранному аргументу во всех ветвях.
+- Отсутствует распаковка null и зависимость от числового значения аргументов.
+
+**Границы постановки:** Возвращение выбранной ссылки допустимо; создание новых объектов и сравнение их идентичности не требуются.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-boxing-null-experiment
+2. @exr-essay-boxing-null-test-design
+3. @exr-essay-boxing-null-implementation
+:::
+
+## Источники для подготовки
+
+- [JLS §5: преобразования, boxing/unboxing, числовое продвижение](https://docs.oracle.com/javase/specs/jls/se25/html/jls-5.html)
+- [Integer: объектное представление и valueOf](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html)
+
+::::::

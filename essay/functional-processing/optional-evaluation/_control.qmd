@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-optional-evaluation-experiment target="prairielearn" project="/functional-processing/optional-evaluation/projects/experiment"}
+### Наблюдение момента вычисления альтернативы
+
+Для Optional.of("ready") сравнить orElse(fallback()) и orElseGet(() -&gt; fallback()), где fallback записывает событие и возвращает "backup". Указать возвращённые значения и число событий; повторить сравнение для Optional.empty().
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Правильно различены лишнее вычисление готового аргумента и ленивый вызов поставщика.
+- Для отсутствующего значения правильно определены результат и число вызовов.
+
+**Границы постановки:** fallback детерминирован и не выбрасывает исключений; каждый запуск получает независимый журнал.
+:::
+::::
+
+:::: {#exr-essay-optional-evaluation-test-design target="prairielearn" project="/functional-processing/optional-evaluation/projects/test-design"}
+### Проверка ленивого получения значения
+
+Написать тесты для String resolve(`Optional<String>` primary, `Supplier<String>` fallback): при наличии значения поставщик не вызывается, при отсутствии вызывается ровно один раз. Проверить также передачу исключения поставщика.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректное решение проходит проверки наличия и отсутствия результата.
+- Обнаружены преждевременный либо повторный вызов и подавление исключения.
+
+**Границы постановки:** primary и fallback не null; поставщик возвращает ненулевую строку либо выбрасывает заданный RuntimeException.
+:::
+::::
+
+:::: {#exr-essay-optional-evaluation-implementation target="prairielearn" project="/functional-processing/optional-evaluation/projects/implementation"}
+### Реализация ленивой альтернативы
+
+Реализовать String resolve(`Optional<String>` primary, `Supplier<String>` fallback), возвращающий присутствующее значение без обращения к fallback, а при отсутствии — результат единственного вызова fallback.get(). Исключение поставщика передать без замены.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Присутствующее значение сохраняется без побочного вызова.
+- Отсутствие вызывает поставщик ровно один раз и сохраняет его результат либо исключение.
+
+**Границы постановки:** Аргументы не null; допустимое возвращаемое поставщиком значение может быть null и должно передаваться без дополнительной проверки.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-optional-evaluation-experiment
+2. @exr-essay-optional-evaluation-test-design
+3. @exr-essay-optional-evaluation-implementation
+:::
+
+## Источники для подготовки
+
+- [Optional: операции над отсутствующим значением](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html)
+- [JLS §15: выражения, вызовы, порядок вычисления, лямбды](https://docs.oracle.com/javase/specs/jls/se25/html/jls-15.html)
+
+::::::

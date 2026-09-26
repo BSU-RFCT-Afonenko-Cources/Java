@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Воспроизводимость, жизненный цикл объектов и измерение поведения {.unnumbered}
+
+Темы раздела посвящены воспроизводимости наблюдений и корректному описанию поведения программы. Рассматриваются время, восстановление графов объектов, управление ресурсами, измерение производительности и интерпретация шаблонов текста.
+
+::: {#essays}
+:::

@@ -1,0 +1,138 @@
+---
+listing:
+  - id: semester-1-у1
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 1
+      difficulty: У1
+  - id: semester-1-у2
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 1
+      difficulty: У2
+  - id: semester-1-у3
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 1
+      difficulty: У3
+  - id: semester-2-у1
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 2
+      difficulty: У1
+  - id: semester-2-у2
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 2
+      difficulty: У2
+  - id: semester-2-у3
+    contents: "*/*/index.qmd"
+    type: table
+    fields: [title, categories]
+    field-display-names:
+      title: Тема исследования
+      categories: Ключевые слова
+    sort: title
+    page-size: 60
+    filter-ui: false
+    sort-ui: false
+    include:
+      semester: 2
+      difficulty: У3
+---
+
+# Исследовательские рефераты по Core Java {.unnumbered}
+
+В книге представлены темы для углублённого изучения Core Java, объединённые в тематические разделы. Каждая глава содержит описание исследования; семестр и уровень сложности помогают выбрать тему с учётом освоенного материала. Номер главы задаётся Quarto и может изменяться при перестановке тем.
+
+Реферат следует оформить как связное исследование в Markdown: сформулировать вопрос, опереться на спецификацию и документацию Java, привести воспроизводимые примеры и объяснить границы применимости выводов. Исходные файлы примеров должны сохранять возможность запуска.
+
+Защита включает три независимых задания по выбранной теме. Условие зачёта — полностью выполнить базовые части заданий; необходимое число: {{< meta prairielearn.assessment-defaults.pass.at-least >}}. Число оцениваемых попыток на задание: {{< meta prairielearn.assessment-defaults.attempts >}}, без снижения максимального балла. Продолжительность защиты и разрешённые средства объявляются преподавателем заранее.
+
+У1 — исследование одного основного контракта; У2 — согласование нескольких правил и граничных случаев; У3 — анализ взаимодействия компонентов или гарантий среды. Сложность не определяет обязательный объём текста.
+
+Совпадение темы у нескольких студентов допустимо: предметом оценки остаётся индивидуальное владение её содержанием. Выбор темы или её назначение фиксируется до защиты.
+
+## Открытая демонстрация {.unnumbered}
+
+[Единицы Unicode и строковые диапазоны](text-arrays/unicode-demonstration/index.qmd) — пример темы с тремя практическими заданиями, скачиваемыми стартовыми проектами и открытыми авторскими решениями. Демонстрационный комплект предназначен для подготовки и не входит в перечень назначаемых тем или контрольные PrairieLearn.
+
+## Семестр 1 {.unnumbered}
+
+### Базовый уровень · У1 {.unnumbered}
+
+::: {#semester-1-у1}
+:::
+
+### Углублённый уровень · У2 {.unnumbered}
+
+::: {#semester-1-у2}
+:::
+
+### Исследовательский уровень · У3 {.unnumbered}
+
+::: {#semester-1-у3}
+:::
+
+
+## Семестр 2 {.unnumbered}
+
+### Базовый уровень · У1 {.unnumbered}
+
+::: {#semester-2-у1}
+:::
+
+### Углублённый уровень · У2 {.unnumbered}
+
+::: {#semester-2-у2}
+:::
+
+### Исследовательский уровень · У3 {.unnumbered}
+
+::: {#semester-2-у3}
+:::

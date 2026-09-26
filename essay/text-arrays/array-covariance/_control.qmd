@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-array-covariance-experiment target="prairielearn" project="/text-arrays/array-covariance/projects/experiment"}
+### Исследование частичного копирования
+
+Предъявить Object[] из трёх элементов и String[] назначения из трёх элементов так, чтобы System.arraycopy записал ровно первые два элемента и завершился ArrayStoreException. Указать полное содержимое назначения после отказа и независимый успешный контроль.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Положение несовместимого элемента обеспечивает частичную запись заданной длины.
+- После отказа правильно описаны изменённый префикс и сохранённый остаток.
+
+**Границы постановки:** Массивы не null, различны, диапазоны корректны; назначение заполняется различимыми строками. Примитивные массивы исключены.
+:::
+::::
+
+:::: {#exr-essay-array-covariance-test-design target="prairielearn" project="/text-arrays/array-covariance/projects/test-design"}
+### Проверка гарантии сохранения назначения
+
+Написать тесты для atomicCopy(Object[] src, String[] dst), копирующего src целиком в dst равной длины. Элементы допускаются только String или null; при другом элементе требуется ArrayStoreException без изменения dst.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная реализация проходит успешный и неуспешный сценарии.
+- Обнаружена реализация с частичной записью до проверки последнего элемента.
+
+**Границы постановки:** src и dst различны, не null и равной длины; исходный массив не изменяется извне во время вызова.
+:::
+::::
+
+:::: {#exr-essay-array-covariance-implementation target="prairielearn" project="/text-arrays/array-covariance/projects/implementation"}
+### Реализация переноса с предварительной проверкой
+
+Реализовать void atomicCopy(Object[] src, String[] dst) для различных массивов равной длины. Если все элементы src являются String либо null, заменить содержимое dst; иначе выбросить ArrayStoreException и полностью сохранить прежний dst.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Совместимые данные копируются в исходном порядке, включая null.
+- Любой несовместимый элемент приводит к отказу без частичной записи.
+
+**Границы постановки:** Нулевые ссылки, несовпадение длин, конкурентная мутация и отказ выделения памяти вне области; перекрытие диапазонов не требуется.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-array-covariance-experiment
+2. @exr-essay-array-covariance-test-design
+3. @exr-essay-array-covariance-implementation
+:::
+
+## Источники для подготовки
+
+- [System.arraycopy: состояние назначения при разных отказах](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/System.html)
+- [JLS §5: преобразования, boxing/unboxing, числовое продвижение](https://docs.oracle.com/javase/specs/jls/se25/html/jls-5.html)
+
+::::::

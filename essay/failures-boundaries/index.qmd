@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Исключения, управление ресурсами и границы компонентов {.unnumbered}
+
+Темы раздела связаны с поведением программы на границах операций и компонентов: при исключениях, освобождении ресурсов, обновлении данных и преобразовании внешних представлений.
+
+::: {#essays}
+:::

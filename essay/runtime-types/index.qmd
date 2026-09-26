@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Типы времени выполнения и совместимость компонентов {.unnumbered}
+
+Раздел раскрывает представление типов и взаимодействие компонентов во время выполнения. Исследования связывают загрузку классов, рефлексию, модульные ограничения и динамическое связывание с гарантиями совместимости.
+
+::: {#essays}
+:::

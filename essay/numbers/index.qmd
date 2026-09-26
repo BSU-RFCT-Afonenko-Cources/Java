@@ -1,0 +1,22 @@
+---
+listing:
+  id: essays
+  contents: "*/index.qmd"
+  type: table
+  fields: [title, semester, difficulty]
+  field-display-names:
+    title: Тема исследования
+    semester: Семестр
+    difficulty: Уровень
+  sort: title
+  page-size: 60
+  filter-ui: false
+  sort-ui: false
+---
+
+# Числовые типы и семантика вычисления выражений {.unnumbered}
+
+Раздел посвящён правилам вычисления числовых выражений: преобразованиям типов, переполнению, точности и порядку вычисления. Исследования связывают формальные правила Java с наблюдаемым поведением программы.
+
+::: {#essays}
+:::

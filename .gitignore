@@ -1,0 +1,8 @@
+**/.quarto/
+**/_book/
+**/_site/
+**/_generated/
+**/_downloads/
+**/.gradle/
+**/build/
+**/*.class

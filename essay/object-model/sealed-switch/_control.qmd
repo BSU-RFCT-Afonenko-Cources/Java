@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-sealed-switch-experiment target="prairielearn" project="/object-model/sealed-switch/projects/experiment"}
+### Различение полноты типов и обработки null
+
+Для sealed Result с вариантами Success и Failure рассмотреть предоставленный исчерпывающий switch без case null. Зафиксировать исходы для каждого варианта и null; затем выбрать минимальное разрешённое изменение, при котором null получает отдельный результат.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Правильно различены успешная компиляция и отказ при null.
+- Изменение сохраняет обработку обоих вариантов и реализует отдельную политику null.
+
+**Границы постановки:** Стенд Java 25 без preview; изменения выбираются из зафиксированных фрагментов либо вносятся в одну ветвь без правки типов.
+:::
+::::
+
+:::: {#exr-essay-sealed-switch-test-design target="prairielearn" project="/object-model/sealed-switch/projects/test-design"}
+### Проверка обработки закрытой модели результата
+
+Написать тесты для String render(Result r): Success(text) возвращает text, Failure(code) — "ERROR:" с десятичным code, null — "EMPTY". Выявить пропуск null и смешение ветвей двух вариантов.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректная реализация принимается для обеих альтернатив и null.
+- Обнаружены неверная ветвь и неявный отказ при null.
+
+**Границы постановки:** text не null, code — любой int; формат результата задан точно, sealed-типы предоставлены.
+:::
+::::
+
+:::: {#exr-essay-sealed-switch-implementation target="prairielearn" project="/object-model/sealed-switch/projects/implementation"}
+### Реализация полного обработчика альтернатив
+
+Реализовать String render(Result r) для предоставленных sealed Result, Success(String text), Failure(int code). Вернуть text для успеха, "ERROR:" + code для ошибки и "EMPTY" для null, используя сопоставление с образцом в switch.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Все разрешённые варианты имеют правильное предметное поведение.
+- null обрабатывается явно, код компилируется на Java 25 без preview.
+
+**Границы постановки:** Типы фиксированы, text не null; проверка не привязывается к формулировкам диагностики компилятора.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-sealed-switch-experiment
+2. @exr-essay-sealed-switch-test-design
+3. @exr-essay-sealed-switch-implementation
+:::
+
+## Источники для подготовки
+
+- [JLS §14: statements, patterns, try, finally, try-with-resources](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [JLS §8: классы, методы, наследование, records и sealed classes](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+
+::::::

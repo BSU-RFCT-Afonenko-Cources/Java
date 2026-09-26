@@ -1,0 +1,61 @@
+:::::: {.when-full}
+
+## Контроль освоения темы
+
+:::: {#exr-essay-finally-control-experiment target="prairielearn" project="/failures-boundaries/finally-control/projects/experiment"}
+### Наблюдение замены результата в finally
+
+Для предоставленных фрагментов с return из try и return из finally, а также с исключениями из обоих блоков указать итоговый результат или исключение. Дополнить каждый сценарий точным журналом входа в try и finally.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Верно определена замена возвращаемого значения завершением finally.
+- Верно определены итоговое исключение и порядок очистки при двух отказах.
+
+**Границы постановки:** Фрагменты не используют try-with-resources, System.exit или потоки; конкретные значения и объекты исключений задаются стендом.
+:::
+::::
+
+:::: {#exr-essay-finally-control-test-design target="prairielearn" project="/failures-boundaries/finally-control/projects/test-design"}
+### Проверка сохранения основной причины отказа
+
+Написать тесты для run(action, cleanup): cleanup вызывается ровно один раз; если action выбросил исключение, именно оно передаётся вызывающему, а ошибка cleanup добавляется в suppressed. При успехе action ошибка cleanup передаётся непосредственно.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Корректный протокол сохраняет результаты и приоритет ошибок.
+- Выявлены подмена основной ошибки и пропущенная либо повторная очистка.
+
+**Границы постановки:** Используются заданные функциональные интерфейсы и различные RuntimeException-объекты; самоподавление исключения исключено входным контрактом.
+:::
+::::
+
+:::: {#exr-essay-finally-control-implementation target="prairielearn" project="/failures-boundaries/finally-control/projects/implementation"}
+### Реализация явной политики ошибок очистки
+
+Реализовать int run(IntSupplier action, Runnable cleanup). Cleanup выполняется ровно один раз после action. Сохранить результат action при успешной очистке; при двух RuntimeException сохранить исключение action, добавив исключение cleanup в suppressed; при отказе только cleanup передать его.
+
+::: {.grading-notes}
+**Базовые критерии автоматической проверки:**
+
+- Успешный результат и одиночные ошибки передаются согласно контракту.
+- При двух отказах сохранены основная ошибка, suppressed-ошибка и единственная очистка.
+
+**Границы постановки:** Обработке подлежат только RuntimeException; Error, один и тот же объект исключения в двух операциях и внешнее прекращение JVM исключены.
+:::
+::::
+
+::: {.assessment-items}
+1. @exr-essay-finally-control-experiment
+2. @exr-essay-finally-control-test-design
+3. @exr-essay-finally-control-implementation
+:::
+
+## Источники для подготовки
+
+- [JLS §14: statements, patterns, try, finally, try-with-resources](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [JLS §11: исключения и их роль в завершении вычисления](https://docs.oracle.com/javase/specs/jls/se25/html/jls-11.html)
+
+::::::
