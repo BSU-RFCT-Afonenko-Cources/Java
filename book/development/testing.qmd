@@ -1,0 +1,37 @@
+# Спецификации, тестирование и отладка {#sec-development-testing}
+
+Тестирование строится на требованиях к программе, независимом ожидаемом результате и обоснованном выборе проверок. Исследовательские средства вынесены в @sec-appendices-tools-verification, а проверка целого приложения — в @sec-integration-application-validation.
+
+## Предусловия, постусловия и инварианты {#sec-development-testing-specifications}
+
+### Тестовый оракул и независимый ожидаемый результат {#sec-development-testing-oracle}
+
+## Корректность цикла и завершение программы {#sec-development-testing-correctness}
+
+### Тройка Хоара и частичная корректность {#sec-development-testing-hoare}
+
+### Завершение, переполнение и границы математической модели {#sec-development-testing-termination}
+
+## Классы эквивалентности и граничные случаи {#sec-development-testing-cases}
+
+### Генерация входов и проверка свойств {#sec-development-testing-properties}
+
+### Метаморфные отношения и преобразование входов {#sec-development-testing-metamorphic}
+
+## Модульные тесты в JUnit Jupiter {#sec-development-testing-junit}
+
+## Утверждения, ожидаемые исключения и параметризованные тесты {#sec-development-testing-assertions}
+
+## Изоляция тестов и тестовые замены {#sec-development-testing-isolation}
+
+## Контрактные, интеграционные и сквозные тесты {#sec-development-testing-levels}
+
+## Отладчик, стек вызовов и локализация дефекта {#sec-development-testing-debugging}
+
+## Покрытие, независимость проверки и ограничения тестирования {#sec-development-testing-limits}
+
+### Мутационное тестирование и различающая способность тестов {#sec-development-testing-mutation}
+
+### Статический анализ, SMT и проверка моделей — обзор {#sec-development-testing-formal-methods}
+
+### Общая ошибочная предпосылка реализации и сгенерированного теста {#sec-development-testing-shared-assumption}

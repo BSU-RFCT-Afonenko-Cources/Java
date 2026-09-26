@@ -1,0 +1,29 @@
+# Память и время жизни объектов {#sec-java-runtime-memory}
+
+Граф ссылок из @sec-java-references позволяет отделить время жизни объекта от области видимости имени и способа физического размещения данных.
+
+## Область видимости, время хранения и время жизни {#sec-java-runtime-memory-lifetime}
+
+## Стек вызовов, куча и области данных JVM {#sec-java-runtime-memory-areas}
+
+## Представление объекта: поля, заголовок и метаданные класса {#sec-java-runtime-memory-layout}
+
+### Спецификация JVM и варианты размещения в HotSpot {#sec-java-runtime-memory-hotspot}
+
+## Достижимость, корни и трассирующая сборка мусора {#sec-java-runtime-memory-reachability}
+
+### Удержание ненужных объектов и утечки памяти {#sec-java-runtime-memory-retention}
+
+## Подсчёт ссылок, циклы и слабые ссылки {#sec-java-runtime-memory-reference-counting}
+
+## Владение и RAII в C++ {#sec-java-runtime-memory-ownership}
+
+## Модель объектов Python и управление памятью CPython {#sec-java-runtime-memory-python}
+
+## Анализ ускользания и устранение выделений {#sec-java-runtime-memory-escape-analysis}
+
+## Паузы, пропускная способность и объём памяти {#sec-java-runtime-memory-tradeoffs}
+
+## Освобождение памяти и завершение работы с ресурсом {#sec-java-runtime-memory-resources}
+
+Как различить удержание достижимого объекта, задержку сборки мусора и незакрытый внешний ресурс из @sec-java-exceptions-resources?

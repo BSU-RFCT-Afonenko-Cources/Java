@@ -1,0 +1,29 @@
+# Типы и моделирование допустимых состояний {#sec-java-types-contracts}
+
+Инварианты из @sec-java-classes-contracts связывают моделирование данных в Java с алгебраическими и зависимыми типами других языков.
+
+## Значения типа и допустимые состояния предметной модели {#sec-java-types-contracts-states}
+
+## Номинальные типы, роли данных и единицы измерения {#sec-java-types-contracts-domain}
+
+## Проверяющий конструктор и граница доверенного значения {#sec-java-types-contracts-construction}
+
+## Произведение типов: запись с несколькими компонентами {#sec-java-types-contracts-products}
+
+## Сумма типов: закрытый набор вариантов {#sec-java-types-contracts-sums}
+
+### record, sealed и сопоставление с образцом в Java {#sec-java-types-contracts-java}
+
+### Исчерпываемость, null и раздельная компиляция {#sec-java-types-contracts-exhaustiveness}
+
+## Maybe, Either и явное представление отсутствия или отказа {#sec-java-types-contracts-results}
+
+## Чистое вычисление и граница эффектов в Haskell {#sec-java-types-contracts-effects}
+
+## Зависимые типы: длина Vect и допустимый индекс Fin {#sec-java-types-contracts-dependent}
+
+## Динамическая проверка, свидетельство и проверка тотальности {#sec-java-types-contracts-totality}
+
+## Выразительность типа и границы гарантии {#sec-java-types-contracts-guarantees}
+
+Какие ошибки исключает отдельный UserId, какие — индекс Fin n, и какие свойства внешних данных всё ещё требуют проверки при выполнении?

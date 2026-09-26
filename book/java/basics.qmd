@@ -1,0 +1,23 @@
+# Основные конструкции языка Java {#sec-java-basics}
+
+Знакомые по C++ управляющие конструкции вводят правила языка, числовая модель которых раскрывается в @sec-java-types-numbers.
+
+## Структура программы, метод main и аргументы запуска {#sec-java-basics-program}
+
+## Переменные, область видимости и инициализация {#sec-java-basics-variables}
+
+### Определённое присваивание и вывод локального типа var {#sec-java-basics-definite-assignment}
+
+## Примитивные типы данных {#sec-java-basics-primitive}
+
+## Операторы, выражения и порядок вычисления {#sec-java-basics-expressions}
+
+## Преобразования типов в числовых выражениях {#sec-java-basics-conversions}
+
+## Переполнение целых и точность вещественных чисел {#sec-java-basics-arithmetic}
+
+## Условные операторы и циклы {#sec-java-basics-control}
+
+## Методы, параметры и перегрузка {#sec-java-basics-methods}
+
+## Синтаксис, статическая семантика и ошибка выполнения {#sec-java-basics-semantics}

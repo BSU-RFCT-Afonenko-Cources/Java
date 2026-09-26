@@ -1,0 +1,17 @@
+# Другие системы контроля версий и сборки {#sec-appendices-tools-alternatives}
+
+Обзор позволяет сопоставить знакомые модели Git и Maven с альтернативными решениями без введения второй обязательной системы разработки.
+
+## Jujutsu: изменения, коммиты и журнал операций {#sec-appendices-tools-alternatives-jj}
+
+## Pijul: зависимости и композиция изменений {#sec-appendices-tools-alternatives-pijul}
+
+## Gradle: задачи, плагины и управление зависимостями {#sec-appendices-tools-alternatives-gradle}
+
+## Bazel: цели сборки и явные зависимости {#sec-appendices-tools-alternatives-bazel}
+
+## Nix: описание окружения и воспроизводимая сборка {#sec-appendices-tools-alternatives-nix}
+
+## Критерии выбора инструмента и стоимость перехода {#sec-appendices-tools-alternatives-comparison}
+
+См. @sec-development-build, @sec-development-git-basics.

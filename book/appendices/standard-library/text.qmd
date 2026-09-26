@@ -1,0 +1,23 @@
+# Строки, кодировки и регулярные выражения {#sec-appendices-standard-library-text}
+
+Материал дополняет разделы о строках и Unicode описанием библиотечных операций обработки текста.
+
+## Операции со String и сравнение строк {#sec-appendices-standard-library-text-string}
+
+## Работа с кодовыми точками Unicode {#sec-appendices-standard-library-text-unicode}
+
+## Построение строк: StringBuilder и StringJoiner {#sec-appendices-standard-library-text-builders}
+
+## Кодировки: Charset и StandardCharsets {#sec-appendices-standard-library-text-charset}
+
+## Кодирование и декодирование: CharsetEncoder и CharsetDecoder {#sec-appendices-standard-library-text-decoding}
+
+### Некорректные последовательности и CodingErrorAction {#sec-appendices-standard-library-text-decoding-malformed}
+
+### Преобразование между текстом и байтами {#sec-appendices-standard-library-text-decoding-round-trip}
+
+## Нормализация, локаль и сравнение текста {#sec-appendices-standard-library-text-normalization}
+
+## Регулярные выражения: Pattern и Matcher {#sec-appendices-standard-library-text-regular-expressions}
+
+См. @sec-java-types-text, @sec-data-io.

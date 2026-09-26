@@ -1,0 +1,25 @@
+# Надёжность и распределённое взаимодействие {#sec-quality-reliability}
+
+Надёжность связывает поведение при отказе с ограниченными ресурсами и условиями повторного выполнения операций. Неопределённый исход вводится в @sec-web-http-failure; локальная граница согласованного изменения — в @sec-persistence-database-transactions.
+
+## Сбои, частичные результаты и неизвестный исход {#sec-quality-reliability-failures}
+
+## Таймауты и общий бюджет времени {#sec-quality-reliability-deadlines}
+
+## Ограниченные очереди и перегрузка {#sec-quality-reliability-capacity}
+
+## Повтор операции и идемпотентный ключ {#sec-quality-reliability-retry}
+
+### Идемпотентный ключ при нескольких экземплярах сервиса {#sec-quality-reliability-distributed-key}
+
+## Репликация и согласованность — обзор {#sec-quality-reliability-consistency}
+
+### Модели согласованности и линейризуемость {#sec-quality-reliability-linearizability}
+
+## CAP и разделение сети — обзор {#sec-quality-reliability-cap}
+
+### Недоступная связь и противоречащие требования {#sec-quality-reliability-partition-experiment}
+
+## Консенсус и CRDT — обзор {#sec-quality-reliability-coordination}
+
+### Алгебра слияния и сходимость CRDT {#sec-quality-reliability-merge-laws}

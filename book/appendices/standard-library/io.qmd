@@ -1,0 +1,19 @@
+# Файлы, потоки ввода-вывода и каналы {#sec-appendices-standard-library-io}
+
+Справочник по работе с файловой системой и последовательной обработке байтовых и текстовых данных.
+
+## Пути и файловая система: Path и FileSystem {#sec-appendices-standard-library-io-paths}
+
+## Чтение, запись и обход каталогов: Files {#sec-appendices-standard-library-io-files}
+
+## Байтовые потоки: InputStream и OutputStream {#sec-appendices-standard-library-io-byte-streams}
+
+## Текстовые потоки: Reader и Writer {#sec-appendices-standard-library-io-character-streams}
+
+## Буферизация и обработка больших файлов {#sec-appendices-standard-library-io-buffering}
+
+## Каналы и буферы: Channel и ByteBuffer {#sec-appendices-standard-library-io-channels}
+
+## Закрытие ресурсов и обработка ошибок ввода-вывода {#sec-appendices-standard-library-io-resources}
+
+См. @sec-data-io, @sec-java-exceptions.

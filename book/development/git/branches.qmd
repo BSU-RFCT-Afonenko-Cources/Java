@@ -1,0 +1,27 @@
+# Ветвление, слияние и совместная работа в Git {#sec-development-git-branches}
+
+Ветки и удалённые репозитории позволяют вести независимую разработку и согласовывать изменения. Смысловой конфликт требует независимой проверки из @sec-development-testing; дополнительные системы рассматриваются в @sec-appendices-tools-alternatives.
+
+## Ветка, HEAD и граф коммитов {#sec-development-git-branches-branches}
+
+## Fast-forward и трёхстороннее слияние {#sec-development-git-branches-merge}
+
+### Несколько общих предков и границы модели слияния {#sec-development-git-branches-merge-bases}
+
+## Разрешение текстовых и смысловых конфликтов {#sec-development-git-branches-conflicts}
+
+### Независимые правки и нарушение общего контракта {#sec-development-git-branches-semantic-conflict}
+
+## Merge и rebase: сохранение и преобразование истории {#sec-development-git-branches-rewrite}
+
+### Снимки, устойчивые изменения Jujutsu и история операций — обзор {#sec-development-git-branches-changes}
+
+### Зависимости и коммутирование патчей: модель Pijul — обзор {#sec-development-git-branches-patches}
+
+## Удалённые репозитории: clone, fetch, pull и push {#sec-development-git-branches-remotes}
+
+## Ветки задач и проверка изменений {#sec-development-git-branches-collaboration}
+
+## Pull request и рецензирование кода {#sec-development-git-branches-review}
+
+## Теги и версии проекта {#sec-development-git-branches-tags}

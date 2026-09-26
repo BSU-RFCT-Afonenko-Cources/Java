@@ -1,0 +1,10 @@
+/.quarto/
+/_book/
+/_generated/
+/_downloads/
+**/.gradle/
+/examples/**/build/
+/examples/**/target/
+*.class
+*.jar
+*.war

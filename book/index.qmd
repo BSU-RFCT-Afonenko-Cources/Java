@@ -1,0 +1,23 @@
+# Программирование на Java {#sec-index}
+
+Книга объединяет язык Java, модели выполнения программ, объектно ориентированное проектирование и разработку приложений; исследовательские вопросы включены в соответствующие разделы основной части.
+
+## Язык и модели программирования {#sec-index-language}
+
+@sec-java-platform; @sec-java-runtime-execution; @sec-java-references; @sec-java-types-contracts.
+
+## Разработка и проектирование {#sec-index-development}
+
+@sec-development-git-basics; @sec-development-build; @sec-development-testing; @sec-design-principles.
+
+## Приложения и взаимодействие {#sec-index-applications}
+
+@sec-concurrency-threads; @sec-web-http; @sec-persistence-database; @sec-architecture-modules.
+
+## Исследовательская работа {#sec-index-research}
+
+@sec-quality-diagnostics; @sec-integration-application; @essay:sec-essay-unicode-codepoints; @essay:sec-essay-microbenchmark-design.
+
+## Библиотека и дополнительные инструменты {#sec-index-reference}
+
+@sec-appendices-standard-library-collections; @sec-appendices-standard-library-text; @sec-appendices-tools-jdk; @sec-appendices-tools-diagnostics.

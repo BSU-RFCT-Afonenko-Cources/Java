@@ -1,0 +1,21 @@
+# Создание объектов и порождающие паттерны {#sec-design-patterns-creation}
+
+Порождающие паттерны разделяют использование объекта и решение о способе его создания. Инвариант создаваемого объекта рассматривается в @sec-design-principles-invariants; переходы уже существующего объекта — в @sec-design-patterns-behavior-state.
+
+## Паттерн: задача, контекст и последствия {#sec-design-patterns-creation-patterns}
+
+## Фабричный метод {#sec-design-patterns-creation-factory}
+
+## Абстрактная фабрика и семейства объектов {#sec-design-patterns-creation-families}
+
+## Builder и пошаговое создание {#sec-design-patterns-creation-builder}
+
+## Обязательные параметры и проверка инварианта {#sec-design-patterns-creation-invariants}
+
+### Typestate и типизированные этапы построения — обзор {#sec-design-patterns-creation-typestate}
+
+### Какие ошибки предотвращает Builder {#sec-design-patterns-creation-builder-guarantees}
+
+## Singleton, глобальное состояние и тестируемость {#sec-design-patterns-creation-singleton}
+
+## Конструктор, фабрика или готовый объект {#sec-design-patterns-creation-alternatives}

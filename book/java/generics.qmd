@@ -1,0 +1,27 @@
+# Обобщённые типы и методы {#sec-java-generics}
+
+Generics отделяют общий алгоритм от типа элемента и развивают способы выражения контрактов из @sec-java-types-contracts.
+
+## Типобезопасность и параметрический полиморфизм {#sec-java-generics-motivation}
+
+## Обобщённые классы, интерфейсы и методы {#sec-java-generics-declarations}
+
+## Ограничения параметров типа {#sec-java-generics-bounds}
+
+## Подтипизация и инвариантность {#sec-java-generics-variance}
+
+## Подстановочные типы и принцип PECS {#sec-java-generics-wildcards}
+
+## Стирание типов и ограничения реализации {#sec-java-generics-erasure}
+
+### Совместимость старого кода и раздельная компиляция {#sec-java-generics-compatibility}
+
+## Массивы, raw types и непроверяемые преобразования {#sec-java-generics-arrays}
+
+## Generics Java, шаблоны C++ и обобщения C# {#sec-java-generics-comparison}
+
+## Специализация, упаковка и стоимость обобщённого кода {#sec-java-generics-cost}
+
+## Параметричность и ограничения выводов из сигнатуры {#sec-java-generics-parametricity}
+
+Какие предположения о поведении обобщённого метода нарушают проверка фактического типа, побочные эффекты и непроверяемое преобразование?

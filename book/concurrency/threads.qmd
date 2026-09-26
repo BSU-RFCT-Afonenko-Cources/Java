@@ -1,0 +1,39 @@
+# Потоки и модели конкурентного выполнения {#sec-concurrency-threads}
+
+Модель потоков связывает последовательность действий с планированием работы и доступом к общим данным. Семантика совместного состояния раскрывается в @sec-concurrency-synchronization, а композиция результатов — в @sec-concurrency-tasks.
+
+## Конкурентность и параллелизм {#sec-concurrency-threads-models}
+
+### Три оси: конкурентность, параллелизм и распределённость {#sec-concurrency-threads-dimensions}
+
+## Процесс и поток {#sec-concurrency-threads-processes}
+
+## Создание, запуск и завершение потока {#sec-concurrency-threads-lifecycle}
+
+## Чередование действий и состояние гонки {#sec-concurrency-threads-interleaving}
+
+## Ожидание завершения и прерывание {#sec-concurrency-threads-waiting}
+
+## Платформенные и виртуальные потоки {#sec-concurrency-threads-virtual}
+
+## Вычисления, ожидание и ограничения ускорения {#sec-concurrency-threads-performance}
+
+### Объём работы, критический путь и предел ускорения {#sec-concurrency-threads-work-span}
+
+### Вычисление, ожидание и стоимость переключений {#sec-concurrency-threads-execution-cost}
+
+## Потоки, процессы и распределённые задачи {#sec-concurrency-threads-distribution}
+
+## Модели исполнения в других языках — обзор {#sec-concurrency-threads-language-models}
+
+### Каналы и обмен сообщениями: Go — обзор {#sec-concurrency-threads-channels}
+
+### Акторы, изоляция и наблюдение за отказами: Erlang — обзор {#sec-concurrency-threads-actors}
+
+### Владение и безопасная передача данных: Rust — обзор {#sec-concurrency-threads-ownership}
+
+### Явное управление задачами: Odin — обзор {#sec-concurrency-threads-explicit-tasks}
+
+### SIMD, GPU и параллелизм данных: Mojo — обзор {#sec-concurrency-threads-data-parallelism}
+
+### Размещение данных и задач: Chapel и X10 — обзор {#sec-concurrency-threads-placement}

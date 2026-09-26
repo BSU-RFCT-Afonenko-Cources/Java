@@ -1,0 +1,19 @@
+# Средства синхронизации java.util.concurrent {#sec-appendices-standard-library-concurrency-synchronization}
+
+Справочник дополняет основной раздел о потоках, мониторах и модели памяти средствами библиотечной координации.
+
+## Атомарные переменные и операции обновления {#sec-appendices-standard-library-concurrency-synchronization-atomics}
+
+## Явные блокировки: Lock и ReentrantLock {#sec-appendices-standard-library-concurrency-synchronization-locks}
+
+## Ожидание условий: Condition {#sec-appendices-standard-library-concurrency-synchronization-conditions}
+
+## Координация потоков: CountDownLatch, CyclicBarrier и Phaser {#sec-appendices-standard-library-concurrency-synchronization-coordination}
+
+## Ограничение доступа к ресурсу: Semaphore {#sec-appendices-standard-library-concurrency-synchronization-semaphores}
+
+## Конкурентные коллекции и блокирующие очереди {#sec-appendices-standard-library-concurrency-synchronization-collections}
+
+## Прерывание, таймауты и освобождение блокировок {#sec-appendices-standard-library-concurrency-synchronization-interruption}
+
+См. @sec-concurrency-synchronization.

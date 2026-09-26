@@ -1,0 +1,21 @@
+# Внедрение зависимостей и тестируемость {#sec-architecture-dependencies}
+
+Явное предоставление зависимостей упрощает замену окружения и проверку компонентов приложения. Полнота входов связывает эту тему с @sec-development-build-reproducibility, а независимость проверки — с @sec-development-testing-oracle.
+
+## Явные и скрытые зависимости {#sec-architecture-dependencies-dependencies}
+
+## Внедрение через конструктор {#sec-architecture-dependencies-injection}
+
+## Инверсия зависимостей и инверсия управления {#sec-architecture-dependencies-dip}
+
+## Ручная сборка графа объектов {#sec-architecture-dependencies-assembly}
+
+## Области жизни и совместное использование {#sec-architecture-dependencies-lifecycle}
+
+## Время и внешнее окружение в тестах {#sec-architecture-dependencies-environment}
+
+### Явные параметры и оставшиеся скрытые зависимости {#sec-architecture-dependencies-hidden-inputs}
+
+## Контрактные тесты адаптеров {#sec-architecture-dependencies-contracts}
+
+### Функциональное ядро и взаимодействие с окружением — обзор {#sec-architecture-dependencies-functional-core}

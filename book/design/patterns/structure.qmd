@@ -1,0 +1,21 @@
+# Структурные паттерны: Adapter и Decorator {#sec-design-patterns-structure}
+
+Структурные паттерны позволяют согласовывать интерфейсы и комбинировать поведение объектов. Условия сохранения поведения связаны с @sec-java-interfaces и с проверкой свойств в @sec-development-testing.
+
+## Композиция объектов и наследование {#sec-design-patterns-structure-composition}
+
+## Adapter и преобразование интерфейса {#sec-design-patterns-structure-adapter}
+
+## Decorator и расширение поведения {#sec-design-patterns-structure-decorator}
+
+## Порядок вложения декораторов {#sec-design-patterns-structure-order}
+
+### Коммутирование обёрток и наблюдаемые эффекты {#sec-design-patterns-structure-commutativity}
+
+## Facade и упрощение взаимодействия — обзор {#sec-design-patterns-structure-facade}
+
+## Proxy и управление доступом — обзор {#sec-design-patterns-structure-proxy}
+
+## Сравнение решений и стоимость обёрток {#sec-design-patterns-structure-tradeoffs}
+
+### Комбинации признаков и рост иерархии {#sec-design-patterns-structure-combinations}

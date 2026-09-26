@@ -1,0 +1,19 @@
+# Справочник инструментов JDK {#sec-appendices-tools-jdk}
+
+Базовая последовательность компиляции и запуска объясняется в основном тексте; приложение содержит дополнительные режимы команд и средства исследования платформы.
+
+## java: параметры запуска и свойства виртуальной машины {#sec-appendices-tools-jdk-java}
+
+## javac: пути поиска, диагностика и целевая версия {#sec-appendices-tools-jdk-javac}
+
+## jar: манифест, содержимое и модульный архив {#sec-appendices-tools-jdk-jar}
+
+## javap: просмотр class-файлов и байткода {#sec-appendices-tools-jdk-javap}
+
+## jdeps: анализ зависимостей и модулей {#sec-appendices-tools-jdk-jdeps}
+
+## jlink и jpackage: создание образа и упаковка приложения {#sec-appendices-tools-jdk-jlink}
+
+## JShell: интерактивные эксперименты {#sec-appendices-tools-jdk-jshell}
+
+См. @sec-java-platform, @sec-java-runtime-execution.

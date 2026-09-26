@@ -1,0 +1,23 @@
+# Отладка и диагностика Java-приложений {#sec-appendices-tools-diagnostics}
+
+Инструменты рассматриваются через конкретные задачи: найти причину исключения, исследовать потоки, измерить нагрузку и обнаружить удерживаемые объекты.
+
+## Отладчик: точки останова, стек и просмотр переменных {#sec-appendices-tools-diagnostics-debugger}
+
+## Консольная отладка с помощью jdb {#sec-appendices-tools-diagnostics-jdb}
+
+## Диагностические команды jcmd {#sec-appendices-tools-diagnostics-jcmd}
+
+## Дампы потоков и поиск взаимных блокировок {#sec-appendices-tools-diagnostics-threads}
+
+## Дампы кучи и анализ удержания объектов {#sec-appendices-tools-diagnostics-memory}
+
+## Java Flight Recorder и Java Mission Control {#sec-appendices-tools-diagnostics-jfr}
+
+## Профилирование и ограничения измерений производительности {#sec-appendices-tools-diagnostics-measurement}
+
+## Java Object Layout: исследование размещения объектов {#sec-appendices-tools-diagnostics-jol}
+
+## JMH: прогрев, отдельные запуски и обработка результатов {#sec-appendices-tools-diagnostics-jmh}
+
+См. @sec-quality-diagnostics, @sec-java-runtime-memory.

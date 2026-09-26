@@ -1,0 +1,27 @@
+# Основы контроля версий Git {#sec-development-git-basics}
+
+Git изучается через устройство истории проекта и повседневную работу с изменениями. Модель зависимостей сопоставляется с графом сборки в @sec-development-build-graph.
+
+## Задачи системы контроля версий {#sec-development-git-basics-purpose}
+
+### Локальные, централизованные и распределённые системы {#sec-development-git-basics-vcs-models}
+
+## Репозиторий, рабочий каталог и индекс {#sec-development-git-basics-repository}
+
+## Снимки, объекты и адресация по содержимому {#sec-development-git-basics-objects}
+
+### Merkle-структуры и зависимость идентификатора от содержимого {#sec-development-git-basics-merkle}
+
+### Хеш, подпись и подтверждение авторства {#sec-development-git-basics-authorship}
+
+## Коммит и история изменений {#sec-development-git-basics-commit}
+
+### Отношение предка и частичный порядок коммитов {#sec-development-git-basics-partial-order}
+
+## Базовый цикл: status, diff, add и commit {#sec-development-git-basics-workflow}
+
+## Просмотр истории и сравнение версий {#sec-development-git-basics-inspection}
+
+## Отмена локальных изменений и восстановление файлов {#sec-development-git-basics-restore}
+
+## Состав репозитория и правила gitignore {#sec-development-git-basics-ignore}

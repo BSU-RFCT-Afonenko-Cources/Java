@@ -1,0 +1,17 @@
+# Настройка и эксплуатация учебного Tomcat {#sec-appendices-tools-tomcat}
+
+Жизненный цикл servlet и обработка HTTP-запроса входят в основной текст; здесь собраны действия по запуску контейнера, развёртыванию и диагностике.
+
+## Структура каталогов и настройка окружения {#sec-appendices-tools-tomcat-installation}
+
+## HTTP-коннектор, адрес и порт {#sec-appendices-tools-tomcat-connectors}
+
+## Структура WAR и контекст приложения {#sec-appendices-tools-tomcat-war}
+
+## Развёртывание, обновление и остановка приложения {#sec-appendices-tools-tomcat-deployment}
+
+## Дескриптор развёртывания и параметры контейнера {#sec-appendices-tools-tomcat-configuration}
+
+## Журналы и диагностика ошибок запуска {#sec-appendices-tools-tomcat-logs}
+
+См. @sec-web-servlets.
