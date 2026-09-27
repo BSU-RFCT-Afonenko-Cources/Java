@@ -10,7 +10,7 @@ Git изучается через устройство истории проек
 
 ## Снимки, объекты и адресация по содержимому {#sec-development-git-basics-objects}
 
-### Merkle-структуры и зависимость идентификатора от содержимого {#sec-development-git-basics-merkle}
+### Структуры Меркла и зависимость идентификатора от содержимого {#sec-development-git-basics-merkle}
 
 ### Хеш, подпись и подтверждение авторства {#sec-development-git-basics-authorship}
 

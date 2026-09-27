@@ -11,6 +11,73 @@ filters:
 reference-catalog:
   namespace: site
   home: book
+  publication:
+    title: Курс Java
+  exports:
+    book:
+      - sec-index
+      - sec-java-platform
+      - sec-java-runtime-execution
+      - sec-java-basics
+      - sec-java-types-numbers
+      - sec-java-references
+      - sec-java-types-arrays
+      - sec-java-types-text
+      - sec-java-runtime-memory
+      - sec-java-classes
+      - sec-java-inheritance
+      - sec-java-interfaces
+      - sec-java-types-contracts
+      - sec-java-generics
+      - sec-java-lambdas
+      - sec-java-exceptions
+      - sec-data-collections
+      - sec-data-io
+      - sec-data-formats
+      - sec-development-git-basics
+      - sec-development-git-branches
+      - sec-development-build
+      - sec-development-testing
+      - sec-design-principles
+      - sec-design-patterns-creation
+      - sec-design-patterns-structure
+      - sec-design-patterns-behavior
+      - sec-design-events
+      - sec-concurrency-threads
+      - sec-concurrency-synchronization
+      - sec-concurrency-tasks
+      - sec-web-http
+      - sec-web-servlets
+      - sec-web-presentation
+      - sec-persistence-database
+      - sec-architecture-modules
+      - sec-architecture-dependencies
+      - sec-architecture-frameworks
+      - sec-quality-diagnostics
+      - sec-quality-security
+      - sec-quality-reliability
+      - sec-integration-application
+      - sec-appendices-standard-library-numbers
+      - sec-appendices-standard-library-text
+      - sec-appendices-standard-library-collections
+      - sec-appendices-standard-library-streams
+      - sec-appendices-standard-library-io
+      - sec-appendices-standard-library-xml
+      - sec-appendices-standard-library-time
+      - sec-appendices-standard-library-concurrency-synchronization
+      - sec-appendices-standard-library-concurrency-tasks
+      - sec-appendices-standard-library-net-http-client
+      - sec-appendices-standard-library-sql-jdbc
+      - sec-appendices-external-libraries-jackson
+      - sec-appendices-tools-tomcat
+      - sec-appendices-tools-h2
+      - sec-appendices-tools-diagnostics
+      - sec-appendices-tools-alternatives
+      - sec-appendices-tools-verification
+      - sec-appendices-gui-javafx
+      - sec-appendices-tools-jdk
+      - sec-appendices-frameworks-spring
+      - sec-appendices-platforms-comparison
   projects:
     book: {path: book, format: html}
     essay: {path: essay, format: html}

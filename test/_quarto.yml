@@ -1,5 +1,6 @@
 project:
   type: default
+  output-dir: _output
 
 crossref:
   exr-title: ''
@@ -7,21 +8,17 @@ crossref:
   chapters: false
 
 lang: ru
-engine: knitr
 
 format:
   pdf:
+    pdf-engine: lualatex
     code-block-bg: "#FCFCFC"
     latex-auto-install: false
     use-rsvg-convert: true
     papersize: a4
     colorlinks: true
-    mainfont: Times New Roman
-    sansfont: Times New Roman
-    monofont: Noto Sans Mono Black
+    mainfont: CMU Serif
+    sansfont: CMU Sans Serif
+    monofont: CMU Typewriter Text
     fontsize: 10pt
     number-sections: false
-    include-in-header:
-      - text: |
-         \usepackage{fontspec}
-         \usepackage{fontawesome5}

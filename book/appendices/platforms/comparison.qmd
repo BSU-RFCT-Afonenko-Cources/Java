@@ -8,11 +8,11 @@
 
 ## Python: динамическая типизация, протоколы и корутины {#sec-appendices-platforms-comparison-python}
 
-## Go: интерфейсы, goroutines и каналы {#sec-appendices-platforms-comparison-go}
+## Go: интерфейсы, горутины и каналы {#sec-appendices-platforms-comparison-go}
 
 ## Rust: владение, заимствование и Future {#sec-appendices-platforms-comparison-rust}
 
-## Erlang и Elixir: процессы, сообщения и supervision {#sec-appendices-platforms-comparison-actors}
+## Erlang и Elixir: процессы, сообщения и надзор за процессами {#sec-appendices-platforms-comparison-actors}
 
 ## Haskell и GHCi: алгебраические типы и описание эффектов {#sec-appendices-platforms-comparison-haskell}
 

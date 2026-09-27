@@ -8,7 +8,7 @@
 
 ### Значение null и разыменование ссылки {#sec-java-references-null}
 
-### Классы-обёртки, boxing и unboxing {#sec-java-references-boxing}
+### Классы-обёртки, упаковка и распаковка значений {#sec-java-references-boxing}
 
 ## Массивы и проверка границ {#sec-java-references-arrays}
 

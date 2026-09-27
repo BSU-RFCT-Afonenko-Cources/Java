@@ -18,10 +18,10 @@ public final class SliceChecks {
         try {
             actual = operation.slice(text, from, to);
         } catch (RuntimeException failure) {
-            throw new AssertionError("A valid range was rejected", failure);
+            throw new AssertionError("Отклонён допустимый диапазон", failure);
         }
         if (!expected.equals(actual)) {
-            throw new AssertionError("Unexpected range content");
+            throw new AssertionError("Содержимое диапазона не соответствует контракту");
         }
     }
 
@@ -32,8 +32,8 @@ public final class SliceChecks {
         } catch (IndexOutOfBoundsException expected) {
             return;
         } catch (RuntimeException failure) {
-            throw new AssertionError("Unexpected exception type", failure);
+            throw new AssertionError("Получен неожиданный тип исключения", failure);
         }
-        throw new AssertionError("An invalid range was accepted");
+        throw new AssertionError("Принят недопустимый диапазон");
     }
 }

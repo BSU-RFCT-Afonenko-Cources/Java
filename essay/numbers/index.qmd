@@ -3,11 +3,10 @@ listing:
   id: essays
   contents: "*/index.qmd"
   type: table
-  fields: [title, semester, difficulty]
+  fields: [title, semester]
   field-display-names:
     title: Тема исследования
     semester: Семестр
-    difficulty: Уровень
   sort: title
   page-size: 60
   filter-ui: false
@@ -18,7 +17,7 @@ listing:
 
 Раздел посвящён правилам вычисления числовых выражений: преобразованиям типов, переполнению, точности и порядку вычисления. Исследования связывают формальные правила Java с наблюдаемым поведением программы.
 
-Уровни в таблице: `introductory` — У1, `intermediate` — У2, `advanced` — У3.
+Темы сгруппированы по уровню сложности на [главной странице рефератов](../index.qmd). В самой теме сложность указана рядом с заданием.
 
 ::: {#essays}
 :::

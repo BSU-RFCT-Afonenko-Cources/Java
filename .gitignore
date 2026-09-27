@@ -24,3 +24,13 @@
 .DS_Store
 
 /.quarto/
+
+# Временная копия шаблона для проверки в CI.
+/.course-template/
+
+# Промежуточные файлы письменных заданий Quarto/LaTeX.
+/test/*.aux
+/test/*.log
+/test/*.out
+/test/*.toc
+/test/*.tex

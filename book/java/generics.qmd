@@ -1,6 +1,6 @@
 # Обобщённые типы и методы {#sec-java-generics}
 
-Generics отделяют общий алгоритм от типа элемента и развивают способы выражения контрактов из @sec-java-types-contracts.
+Обобщённые типы отделяют общий алгоритм от типа элемента и развивают способы выражения контрактов из @sec-java-types-contracts.
 
 ## Типобезопасность и параметрический полиморфизм {#sec-java-generics-motivation}
 
@@ -16,9 +16,9 @@ Generics отделяют общий алгоритм от типа элемен
 
 ### Совместимость старого кода и раздельная компиляция {#sec-java-generics-compatibility}
 
-## Массивы, raw types и непроверяемые преобразования {#sec-java-generics-arrays}
+## Массивы, непараметризованные типы и непроверяемые преобразования {#sec-java-generics-arrays}
 
-## Generics Java, шаблоны C++ и обобщения C# {#sec-java-generics-comparison}
+## Обобщения Java и C# в сравнении с шаблонами C++ {#sec-java-generics-comparison}
 
 ## Специализация, упаковка и стоимость обобщённого кода {#sec-java-generics-cost}
 

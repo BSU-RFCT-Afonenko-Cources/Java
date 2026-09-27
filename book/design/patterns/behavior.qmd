@@ -1,23 +1,23 @@
-# Поведенческие паттерны: Strategy, State и Observer {#sec-design-patterns-behavior}
+# Поведенческие паттерны: стратегия, состояние и наблюдатель {#sec-design-patterns-behavior}
 
 Поведенческие паттерны организуют выбор алгоритма, изменение состояния и взаимодействие объектов. Обработка событий развивается в @sec-design-events, а выбор расширяемой модели — в @sec-design-principles-evaluation.
 
-## Strategy и взаимозаменяемые алгоритмы {#sec-design-patterns-behavior-strategy}
+## Стратегия (Strategy): взаимозаменяемые алгоритмы {#sec-design-patterns-behavior-strategy}
 
-## State и автомат состояний {#sec-design-patterns-behavior-state}
+## Состояние (State): реализация автомата {#sec-design-patterns-behavior-state}
 
 ## Разрешённые переходы и проверка состояния {#sec-design-patterns-behavior-transitions}
 
 ### Автомат состояния, типы этапов и сохранённые ссылки {#sec-design-patterns-behavior-typestate-limits}
 
-## Observer, подписка и уведомление {#sec-design-patterns-behavior-observer}
+## Наблюдатель (Observer): подписка и уведомление {#sec-design-patterns-behavior-observer}
 
 ## Порядок уведомлений и время жизни подписки {#sec-design-patterns-behavior-lifetime}
 
-## Template Method и расширяемый алгоритм — обзор {#sec-design-patterns-behavior-template}
+## Шаблонный метод (Template Method): расширяемый алгоритм — обзор {#sec-design-patterns-behavior-template}
 
 ## Выбор между стратегией, состоянием и функцией {#sec-design-patterns-behavior-comparison}
 
-### Visitor и расширение набора операций — обзор {#sec-design-patterns-behavior-visitor}
+### Посетитель (Visitor): расширение набора операций — обзор {#sec-design-patterns-behavior-visitor}
 
 ### Открытая иерархия и закрытое семейство вариантов {#sec-design-patterns-behavior-extension}

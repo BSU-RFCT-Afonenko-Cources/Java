@@ -12,7 +12,7 @@ def checks = variants.collect { variant ->
     tasks.register("grade${variant.capitalize()}", Test) {
         dependsOn prepareReports, tasks.named(fixture.classesTaskName), tasks.named('testClasses')
         testClassesDirs = sourceSets.test.output.classesDirs
-        // Only the selected implementation enters this isolated test process.
+        // В отдельном процессе проверяется только выбранная реализация.
         classpath = sourceSets.test.output + fixture.output + configurations.testRuntimeClasspath
         useJUnitPlatform()
         ignoreFailures = true

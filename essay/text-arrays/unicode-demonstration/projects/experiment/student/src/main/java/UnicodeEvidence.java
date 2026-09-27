@@ -5,6 +5,6 @@ public final class UnicodeEvidence {
                           String firstCodePoint) {}
 
     public static Example[] examples() {
-        throw new UnsupportedOperationException("Implement the experiment");
+        throw new UnsupportedOperationException("Подготовьте данные для эксперимента");
     }
 }

@@ -12,14 +12,13 @@ profile:
   group:
     - [student, full]
 course:
-  schema: "1.1"
   id: java-essays
   validate: true
   view: student
 course-pedagogy:
   document-defaults: true
-# Topic metadata is also used by native Quarto listings. Explicit attributes on
-# a particular exercise can override the document defaults.
+# Указатели Quarto и учебные блоки читают общие метаданные темы.
+# Атрибуты упражнения уточняют значения, заданные для всей главы.
 work-mode: individual
 prairielearn:
   assessment-defaults:

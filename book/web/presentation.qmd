@@ -6,7 +6,7 @@
 
 ## Передача данных формы {#sec-web-presentation-submission}
 
-## Model–View–Controller {#sec-web-presentation-mvc}
+## Модель, представление и контроллер (MVC) {#sec-web-presentation-mvc}
 
 ## Серверные шаблоны и формирование HTML {#sec-web-presentation-templates}
 
@@ -16,7 +16,7 @@
 
 ### Серверный рендеринг и клиентское приложение {#sec-web-presentation-rendering-models}
 
-## Cookie, сессия и состояние пользователя {#sec-web-presentation-session}
+## Файлы cookie, сессия и состояние пользователя {#sec-web-presentation-session}
 
 ### Локальное состояние клиента и граница доверия {#sec-web-presentation-client-state}
 

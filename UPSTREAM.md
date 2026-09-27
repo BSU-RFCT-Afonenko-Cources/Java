@@ -1,21 +1,27 @@
-# Источники установленных расширений
+# Источники расширений и авторского формата
 
-Обновление интеграции учебных элементов, 27 сентября 2026 года.
-Копии в `_extensions` являются входными данными сборки и хранятся в Git.
-При рендере ничего не скачивается.
+Курс использует один текущий формат учебных данных. Его настройки находятся в
+YAML; отдельный номер схемы и переключатели совместимости не задаются.
+Расширения включены в репозиторий, поэтому сборка не требует их скачивания.
 
-| Пакеты | Исходник | Проверенный commit |
+| Расширение | Репозиторий | Проверенный коммит |
 |---|---|---|
-| course-core 1.2.0; course-presentation 0.1.0 | [programming-course-core-specification](https://github.com/AfonenkoA/programming-course-core-specification) | [7ea756ba67860d7c9c731ff0fe88fae5ff30744f](https://github.com/AfonenkoA/programming-course-core-specification/tree/7ea756ba67860d7c9c731ff0fe88fae5ff30744f) |
-| reference-catalog 1.1.1 | [quarto-reference-catalog](https://github.com/AfonenkoA/quarto-reference-catalog) | [63483d8f2331245a75715bc20cea5e3763ac99ee](https://github.com/AfonenkoA/quarto-reference-catalog/tree/63483d8f2331245a75715bc20cea5e3763ac99ee) |
+| `course-core`, `course-presentation` | [Ядро и представление курса](https://github.com/AfonenkoA/programming-course-core-specification) | [d5e31f2](https://github.com/AfonenkoA/programming-course-core-specification/tree/d5e31f204eadf17ba5a4477ccc30aecbaee574ec) |
+| `reference-catalog` | [Каталог перекрёстных ссылок](https://github.com/AfonenkoA/quarto-reference-catalog) | [6b19450](https://github.com/AfonenkoA/quarto-reference-catalog/tree/6b19450fd31c28c5aae17c658a01123c67cc4f7b) |
+| `course-prairielearn` | [Адаптер PrairieLearn](https://github.com/AfonenkoA/programming-course-prairielearn-specification) | [e38d4f0](https://github.com/AfonenkoA/programming-course-prairielearn-specification/tree/e38d4f0b7965cc09ae3d09153d4cb4855efe3429) |
 
-Установлены только используемые пакеты соответствующего подпроекта; прочие
-адаптеры оценивания не менялись. Версии IR и API различаются: новые учебные
-элементы включаются через `course.schema: "1.1"`, старые проекты могут оставаться
-на `1.0`. Именованных брендовых форматов нет.
+Исходные файлы установленных расширений совпадают с указанными коммитами.
+Книга подключает `course-core`; рефераты — также `course-presentation` и
+`course-prairielearn`. Корневой проект использует `reference-catalog` для общей
+сборки и связывания страниц. Тема HTML — стандартная `cosmo`.
 
-Обновляйте исходники стандартным `quarto add` с выбранным commit/tag,
-проверяйте путь установки (GitHub-источник может добавить namespace владельца)
-и коммитьте установленную копию целиком. После обновления обязательны обе
-профильные сборки. Не смешивайте редактирование vendored-копий и обновление:
-изменения реализации сначала вносятся в upstream. Git submodules не нужны.
+Проверка покрытия авторского формата запускается из
+[шаблона курса](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template).
+Проверенный коммит [13f7c92](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template/tree/13f7c9205029b97001d56c9655fffe7a5a2f25b7) закреплён в `.github/workflows/check.yml`. Проверка читает
+действующие примеры шаблона и документы Java, включая включаемые фрагменты и
+самостоятельный PDF-проект; отдельной копии перечня возможностей в Java нет.
+
+Изменения реализации вносятся в исходный репозиторий расширения. При обновлении
+заменяйте его установленную копию целиком, затем проверяйте покрытие шаблоном и
+собирайте студенческий и полный сайты. Коммиты в этой таблице фиксируют состав
+проверенной поставки, а не варианты поддерживаемых схем.
