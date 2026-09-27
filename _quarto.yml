@@ -2,6 +2,13 @@ project:
   type: website
   output-dir: _site
   render: []
+  pre-render: _extensions/Afonenko-Course-Tools/project-publish/entrypoints/pre.ts
+  post-render: _extensions/Afonenko-Course-Tools/project-publish/entrypoints/post.ts
+  preview:
+    watch-inputs: false
+    serve:
+      cmd: "quarto run ../.project-publish/preview.ts --port {port} --host {host}"
+      ready: "Публикация предпросмотр готов"
   resources:
     - "!book/**"
     - "!essay/**"
@@ -10,7 +17,6 @@ filters:
   - reference-catalog
 reference-catalog:
   namespace: site
-  home: book
   publication:
     title: Курс Java
   exports:
@@ -78,9 +84,15 @@ reference-catalog:
       - sec-appendices-tools-jdk
       - sec-appendices-frameworks-spring
       - sec-appendices-platforms-comparison
-  projects:
-    book: {path: book, format: html}
-    essay: {path: essay, format: html}
+
 profile:
   default: student
   group: [[student, full]]
+
+project-publish:
+  home: book
+  projects:
+    book: {path: book, format: html}
+    essay: {path: essay, format: html}
+  integrations:
+    - _extensions/Afonenko-Course-Tools/reference-catalog/entrypoints/publication.ts

@@ -34,3 +34,6 @@
 /test/*.out
 /test/*.toc
 /test/*.tex
+
+# Служебное состояние координатора публикации.
+**/.project-publish/

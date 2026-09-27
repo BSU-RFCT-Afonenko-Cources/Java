@@ -1,27 +1,24 @@
-# Источники расширений и авторского формата
+# Источники установленных расширений
 
-Курс использует один текущий формат учебных данных. Его настройки находятся в
-YAML; отдельный номер схемы и переключатели совместимости не задаются.
-Расширения включены в репозиторий, поэтому сборка не требует их скачивания.
+Каталоги `_extensions` хранятся в Git и используются непосредственно при сборке.
+Установка не включает пакет: фильтры, обработчики и тема подключаются явно в YAML.
+При обновлении меняют целую установленную копию и проверяют оба профиля.
 
-| Расширение | Репозиторий | Проверенный коммит |
+| Пакеты | Исходный репозиторий | Проверенный коммит |
 |---|---|---|
-| `course-core`, `course-presentation` | [Ядро и представление курса](https://github.com/AfonenkoA/programming-course-core-specification) | [d5e31f2](https://github.com/AfonenkoA/programming-course-core-specification/tree/d5e31f204eadf17ba5a4477ccc30aecbaee574ec) |
-| `reference-catalog` | [Каталог перекрёстных ссылок](https://github.com/AfonenkoA/quarto-reference-catalog) | [6b19450](https://github.com/AfonenkoA/quarto-reference-catalog/tree/6b19450fd31c28c5aae17c658a01123c67cc4f7b) |
-| `course-prairielearn` | [Адаптер PrairieLearn](https://github.com/AfonenkoA/programming-course-prairielearn-specification) | [e38d4f0](https://github.com/AfonenkoA/programming-course-prairielearn-specification/tree/e38d4f0b7965cc09ae3d09153d4cb4855efe3429) |
+| `course-core, course-presentation` | [Afonenko-Course-Tools/quarto-course](https://github.com/Afonenko-Course-Tools/quarto-course) | [1afcc929f5006a7b4252310851e12d456cba00cd](https://github.com/Afonenko-Course-Tools/quarto-course/tree/1afcc929f5006a7b4252310851e12d456cba00cd) |
+| `reference-catalog` | [Afonenko-Course-Tools/quarto-reference-catalog](https://github.com/Afonenko-Course-Tools/quarto-reference-catalog) | [f99d38d945b168e0113b9b6a3de506d9ffe761c0](https://github.com/Afonenko-Course-Tools/quarto-reference-catalog/tree/f99d38d945b168e0113b9b6a3de506d9ffe761c0) |
+| `project-publish` | [Afonenko-Course-Tools/quarto-project-publish](https://github.com/Afonenko-Course-Tools/quarto-project-publish) | [d9cc5ee0f810c91c38e4bb6d1dc0093b085d016d](https://github.com/Afonenko-Course-Tools/quarto-project-publish/tree/d9cc5ee0f810c91c38e4bb6d1dc0093b085d016d) |
+| `project-download` | [Afonenko-Course-Tools/quarto-project-download](https://github.com/Afonenko-Course-Tools/quarto-project-download) | [e00f34a40308380263d119c522e5c18a9381817b](https://github.com/Afonenko-Course-Tools/quarto-project-download/tree/e00f34a40308380263d119c522e5c18a9381817b) |
+| `bsu-theme` | [BSU-RFCT-Afonenko-Courses/quarto-theme-bsu](https://github.com/BSU-RFCT-Afonenko-Courses/quarto-theme-bsu) | [176701f68e32c6424c67ca00a31deb15aeca6818](https://github.com/BSU-RFCT-Afonenko-Courses/quarto-theme-bsu/tree/176701f68e32c6424c67ca00a31deb15aeca6818) |
+| `course-prairielearn` | [Afonenko-Course-Tools/quarto-course-prairielearn](https://github.com/Afonenko-Course-Tools/quarto-course-prairielearn) | [95c6718640210b654c1f332bd8ba48effa1a92a6](https://github.com/Afonenko-Course-Tools/quarto-course-prairielearn/tree/95c6718640210b654c1f332bd8ba48effa1a92a6) |
 
-Исходные файлы установленных расширений совпадают с указанными коммитами.
-Книга подключает `course-core`; рефераты — также `course-presentation` и
-`course-prairielearn`. Корневой проект использует `reference-catalog` для общей
-сборки и связывания страниц. Тема HTML — стандартная `cosmo`.
+Авторский формат проверяется работающими примерами
+[шаблона курса](https://github.com/Afonenko-Course-Tools/quarto-template-course/tree/9ff6bbfa71b4849068da9a134256d3733e6f3be3).
+Тот же коммит закреплён в CI. Компиляторы и публикация заданий на платформу
+не входят в обновление. Книга и исследования используют отдельную тему БГУ.
 
-Проверка покрытия авторского формата запускается из
-[шаблона курса](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template).
-Проверенный коммит [b8be04c](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template/tree/b8be04c3fbbe1f04432a7b1ecd3ede69b508a2fd) закреплён в `.github/workflows/check.yml`. Проверка читает
-действующие примеры шаблона и документы Java, включая включаемые фрагменты и
-самостоятельный PDF-проект; отдельной копии перечня возможностей в Java нет.
-
-Изменения реализации вносятся в исходный репозиторий расширения. При обновлении
-заменяйте его установленную копию целиком, затем проверяйте покрытие шаблоном и
-собирайте студенческий и полный сайты. Коммиты в этой таблице фиксируют состав
-проверенной поставки, а не варианты поддерживаемых схем.
+Сведения о коммитах фиксируют происхождение этой поставки, а не поддерживаемые
+варианты схем. Учебная модель имеет один текущий контракт. Изменения реализации
+вносятся в указанные исходные репозитории. При установке через `quarto add`
+учитывайте возможное пространство имён владельца в пути пакета.
