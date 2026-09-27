@@ -30,8 +30,8 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          repository: BSU-RFCT-Afonenko-Cources/programming-course-template
-          ref: b8be04c3fbbe1f04432a7b1ecd3ede69b508a2fd
+          repository: Afonenko-Course-Tools/quarto-template-course
+          ref: 9ff6bbfa71b4849068da9a134256d3733e6f3be3
           path: .course-template
           persist-credentials: false
       - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
@@ -50,3 +50,5 @@ jobs:
         run: quarto render --profile student --fail-if-warnings
       - name: Полное представление
         run: quarto render --profile full --fail-if-warnings
+      - name: Ссылки, архивы и изоляция преподавательского контроля
+        run: quarto run tests/check-publication.ts

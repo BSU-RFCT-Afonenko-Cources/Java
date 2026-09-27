@@ -1,4 +1,10 @@
 project:
+  pre-render:
+    - _extensions/Afonenko-Course-Tools/course-core/entrypoints/pre.ts
+    - _extensions/Afonenko-Course-Tools/project-download/entrypoints/pre.ts
+  post-render:
+    - _extensions/Afonenko-Course-Tools/course-core/entrypoints/post.ts
+    - _extensions/Afonenko-Course-Tools/project-download/entrypoints/post.ts
   type: book
   output-dir: _book/student
   resources:
@@ -12,6 +18,7 @@ profile:
   group:
     - [student, full]
 course:
+  adapters: [prairielearn]
   id: java-essays
   validate: true
   view: student
@@ -28,6 +35,7 @@ prairielearn:
     assignment:
       mode: assessment-id
 filters:
+  - project-download
   - course-core
   - course-prairielearn
   - course-presentation
@@ -130,3 +138,23 @@ format:
     code-copy: true
     code-tools: false
 lang: ru
+
+metadata-files: [_bsu.yml]
+
+project-download:
+  resources:
+    exr-essay-charset-decoding-experiment:
+      path: failures-boundaries/charset-decoding/projects/experiment/student
+      profiles: [full]
+    exr-essay-charset-decoding-implementation:
+      path: failures-boundaries/charset-decoding/projects/implementation/student
+      profiles: [full]
+    exr-essay-charset-decoding-test-design:
+      path: failures-boundaries/charset-decoding/projects/test-design/student
+      profiles: [full]
+    exr-essay-unicode-demonstration-experiment:
+      path: text-arrays/unicode-demonstration/projects/experiment/student
+    exr-essay-unicode-demonstration-implementation:
+      path: text-arrays/unicode-demonstration/projects/implementation/student
+    exr-essay-unicode-demonstration-test-design:
+      path: text-arrays/unicode-demonstration/projects/test-design/student
