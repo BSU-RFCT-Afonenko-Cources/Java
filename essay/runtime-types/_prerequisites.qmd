@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Загрузка, связывание и выполнение Java-программы: @book:sec-java-runtime-execution.
+- Типы, интерфейсы и границы совместимости: @book:sec-java-interfaces.
+:::

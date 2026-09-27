@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Время жизни объектов и ресурсов: @book:sec-java-runtime-memory.
+- Наблюдение, измерение и воспроизводимый эксперимент: @book:sec-quality-diagnostics.
+:::

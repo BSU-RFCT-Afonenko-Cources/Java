@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Потоки, чередование действий и прерывание: @book:sec-concurrency-threads.
+- Синхронизация, видимость и инварианты общего состояния: @book:sec-concurrency-synchronization.
+:::

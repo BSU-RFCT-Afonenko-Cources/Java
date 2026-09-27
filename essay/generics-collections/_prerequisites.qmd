@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Обобщённые типы и ограничения параметров: @book:sec-java-generics.
+- Контракты коллекций, равенство и порядок: @book:sec-data-collections.
+:::

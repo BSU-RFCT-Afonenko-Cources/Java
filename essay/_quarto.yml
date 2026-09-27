@@ -12,10 +12,15 @@ profile:
   group:
     - [student, full]
 course:
-  schema: "1.0"
+  schema: "1.1"
   id: java-essays
   validate: true
   view: student
+course-pedagogy:
+  document-defaults: true
+# Topic metadata is also used by native Quarto listings. Explicit attributes on
+# a particular exercise can override the document defaults.
+work-mode: individual
 prairielearn:
   assessment-defaults:
     attempts: 3
@@ -26,6 +31,7 @@ prairielearn:
 filters:
   - course-core
   - course-prairielearn
+  - course-presentation
 book:
   title: "Исследовательские рефераты по Core Java"
   chapters:
