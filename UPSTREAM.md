@@ -17,7 +17,7 @@ YAML; отдельный номер схемы и переключатели с�
 
 Проверка покрытия авторского формата запускается из
 [шаблона курса](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template).
-Проверенный коммит [13f7c92](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template/tree/13f7c9205029b97001d56c9655fffe7a5a2f25b7) закреплён в `.github/workflows/check.yml`. Проверка читает
+Проверенный коммит [b8be04c](https://github.com/BSU-RFCT-Afonenko-Cources/programming-course-template/tree/b8be04c3fbbe1f04432a7b1ecd3ede69b508a2fd) закреплён в `.github/workflows/check.yml`. Проверка читает
 действующие примеры шаблона и документы Java, включая включаемые фрагменты и
 самостоятельный PDF-проект; отдельной копии перечня возможностей в Java нет.
 
