@@ -8,14 +8,14 @@
 
 ## Абстрактная фабрика и семейства объектов {#sec-design-patterns-creation-families}
 
-## Builder и пошаговое создание {#sec-design-patterns-creation-builder}
+## Строитель (Builder): пошаговое создание объекта {#sec-design-patterns-creation-builder}
 
 ## Обязательные параметры и проверка инварианта {#sec-design-patterns-creation-invariants}
 
-### Typestate и типизированные этапы построения — обзор {#sec-design-patterns-creation-typestate}
+### Кодирование состояния в типе (Typestate): этапы построения — обзор {#sec-design-patterns-creation-typestate}
 
-### Какие ошибки предотвращает Builder {#sec-design-patterns-creation-builder-guarantees}
+### Какие ошибки предотвращает строитель {#sec-design-patterns-creation-builder-guarantees}
 
-## Singleton, глобальное состояние и тестируемость {#sec-design-patterns-creation-singleton}
+## Одиночка (Singleton): глобальное состояние и тестируемость {#sec-design-patterns-creation-singleton}
 
 ## Конструктор, фабрика или готовый объект {#sec-design-patterns-creation-alternatives}

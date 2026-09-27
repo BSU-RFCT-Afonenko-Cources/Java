@@ -28,6 +28,6 @@
 
 ### Очередь, пропускная способность и закон Литтла — обзор {#sec-concurrency-tasks-little-law}
 
-## Fork/join, структурная конкурентность и альтернативные модели — обзор {#sec-concurrency-tasks-overview}
+## Разделение и объединение задач, структурная конкурентность и альтернативные модели — обзор {#sec-concurrency-tasks-overview}
 
 ### Один граф задач в разных моделях исполнения {#sec-concurrency-tasks-model-experiment}

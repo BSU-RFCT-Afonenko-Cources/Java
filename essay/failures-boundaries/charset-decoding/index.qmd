@@ -1,6 +1,6 @@
 ---
 semester: 1
-difficulty: У2
+difficulty: intermediate
 categories:
   - "UTF-8"
   - "Декодирование"
@@ -16,13 +16,23 @@ assessment:
 :::: {#exr-essay-charset-decoding target="manual"}
 ## Содержание исследования
 
+{{< include ../_prerequisites.qmd >}}
+
+::: {course-role="prerequisites"}
+Для этой темы дополнительно нужны представление текста на границе байтового
+потока (@book:sec-data-io-unicode) и ошибки декодирования
+(@book:sec-data-io-errors).
+:::
+
 Исследовать преобразование полного сообщения UTF-8 из массива байтов в строку средствами Java. Сопоставить замену повреждённых последовательностей конструктором `String` и строгую обработку ошибок средствами `CharsetDecoder`, включая незавершённый символ в конце сообщения. Объяснить назначение политик `REPORT` для `malformed` и `unmappable input`, разграничив общий контракт декодера и ошибки, характерные для UTF-8. Обосновать, почему наличие символа U+FFFD в строке само по себе не доказывает повреждение исходных байтов. Подобрать корректные и некорректные примеры, сформулировать проверяемый контракт строгого декодирования и систему тестов, которая отличает соблюдение контракта от молчаливой подмены, потери данных и необоснованного отказа. Рассмотреть пустой вход, многобайтные символы и сохранность исходного массива; потоковую обработку и протоколы обмена исключить из реализации.
 ::::
 
 ## Источники для подготовки
 
+::: {course-role="reading" requirement="recommended"}
 - [CharsetDecoder: обработка ошибок и декодирование полного буфера](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetDecoder.html)
 - [String: преобразование массива байтов с явным указанием Charset](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte%5B%5D,java.nio.charset.Charset))
+:::
 
 
 {{< include _control.qmd >}}

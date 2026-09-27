@@ -12,10 +12,14 @@ profile:
   group:
     - [student, full]
 course:
-  schema: "1.0"
   id: java-essays
   validate: true
   view: student
+course-pedagogy:
+  document-defaults: true
+# Указатели Quarto и учебные блоки читают общие метаданные темы.
+# Атрибуты упражнения уточняют значения, заданные для всей главы.
+work-mode: individual
 prairielearn:
   assessment-defaults:
     attempts: 3
@@ -26,6 +30,7 @@ prairielearn:
 filters:
   - course-core
   - course-prairielearn
+  - course-presentation
 book:
   title: "Исследовательские рефераты по Core Java"
   chapters:

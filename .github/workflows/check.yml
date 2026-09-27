@@ -1,24 +1,52 @@
-name: Check course
+name: Проверка курса
+
 on:
   pull_request:
   push:
     branches: [master]
   workflow_dispatch:
+  schedule:
+    - cron: '43 5 * * 1'
+
 permissions:
   contents: read
+
 concurrency:
   group: course-check-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   render:
+    name: Сборка и согласованность (${{ matrix.quarto }})
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        quarto: [release, pre-release]
     steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          version: release
-      - uses: cue-lang/setup-cue@v1.0.0
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: BSU-RFCT-Afonenko-Cources/programming-course-template
+          ref: b8be04c3fbbe1f04432a7b1ecd3ede69b508a2fd
+          path: .course-template
+          persist-credentials: false
+      - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
+        with:
+          version: ${{ matrix.quarto }}
+      - uses: cue-lang/setup-cue@b0e30e540a2dae47304ebf16586a5b2db023b61c # v2.0.0
         with:
           version: latest
-      - run: quarto render --profile student
-      - run: quarto render --profile full
+      - name: Версии инструментов
+        run: |
+          quarto --version
+          cue version
+      - name: Покрытие авторского формата примерами шаблона
+        run: quarto run .course-template/tests/features.ts --course .
+      - name: Студенческое представление
+        run: quarto render --profile student --fail-if-warnings
+      - name: Полное представление
+        run: quarto render --profile full --fail-if-warnings

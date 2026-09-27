@@ -112,7 +112,6 @@ profile:
   - - student
     - full
 course:
-  schema: '1.0'
   id: java-book
   validate: true
   view: student

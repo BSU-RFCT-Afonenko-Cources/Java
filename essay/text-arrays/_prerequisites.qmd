@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Строки, кодовые единицы и кодовые точки Unicode: @book:sec-java-types-text.
+- Массивы, индексы и копирование ссылок: @book:sec-java-types-arrays.
+:::

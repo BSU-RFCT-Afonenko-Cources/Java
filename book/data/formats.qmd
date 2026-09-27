@@ -24,7 +24,7 @@
 
 ### Неизвестные поля, значения по умолчанию и потеря информации {#sec-data-formats-unknown-fields}
 
-## Исследование свойств encode–decode и decode–encode {#sec-data-formats-round-trip}
+## Обратимость кодирования и декодирования {#sec-data-formats-round-trip}
 
 ### Каноническое представление и смысловая эквивалентность {#sec-data-formats-canonicalization}
 

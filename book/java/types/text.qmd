@@ -18,7 +18,7 @@
 
 ## String, std::string и строки Python {#sec-java-types-text-languages}
 
-## Внутреннее представление и Compact Strings {#sec-java-types-text-storage}
+## Компактное внутреннее представление строк (Compact Strings) {#sec-java-types-text-storage}
 
 ## Эволюция представления при сохранении API {#sec-java-types-text-evolution}
 

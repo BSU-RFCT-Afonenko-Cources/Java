@@ -4,9 +4,9 @@ Servlet API показывает устройство серверной обр�
 
 ## Веб-сервер, контейнер и приложение {#sec-web-servlets-server}
 
-### Эволюция серверной обработки: CGI, servlet и middleware — обзор {#sec-web-servlets-server-models}
+### Эволюция серверной обработки: CGI, сервлеты и промежуточные обработчики — обзор {#sec-web-servlets-server-models}
 
-## Жизненный цикл servlet {#sec-web-servlets-lifecycle}
+## Жизненный цикл сервлета {#sec-web-servlets-lifecycle}
 
 ## Маршрутизация и обработка запроса {#sec-web-servlets-routing}
 

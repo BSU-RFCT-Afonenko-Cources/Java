@@ -6,7 +6,7 @@
 
 ## Исходный язык, промежуточное представление и машинный код {#sec-java-runtime-execution-representations}
 
-## Class-файл: инструкции, константы и метаданные {#sec-java-runtime-execution-class-file}
+## Файл класса: инструкции, константы и метаданные {#sec-java-runtime-execution-class-file}
 
 ## Загрузка, связывание и инициализация классов {#sec-java-runtime-execution-loading}
 

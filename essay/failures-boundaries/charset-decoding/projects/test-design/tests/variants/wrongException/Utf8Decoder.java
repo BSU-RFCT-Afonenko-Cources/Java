@@ -6,7 +6,7 @@ public final class Utf8Decoder {
         try {
             return StandardCharsets.UTF_8.newDecoder().decode(ByteBuffer.wrap(bytes)).toString();
         } catch (CharacterCodingException failure) {
-            throw new IllegalArgumentException("invalid input");
+            throw new IllegalArgumentException("Недопустимые входные данные");
         }
     }
 }

@@ -4,7 +4,7 @@
 
 ## Ветка, HEAD и граф коммитов {#sec-development-git-branches-branches}
 
-## Fast-forward и трёхстороннее слияние {#sec-development-git-branches-merge}
+## Перемещение указателя ветки и трёхстороннее слияние {#sec-development-git-branches-merge}
 
 ### Несколько общих предков и границы модели слияния {#sec-development-git-branches-merge-bases}
 
@@ -12,7 +12,7 @@
 
 ### Независимые правки и нарушение общего контракта {#sec-development-git-branches-semantic-conflict}
 
-## Merge и rebase: сохранение и преобразование истории {#sec-development-git-branches-rewrite}
+## Слияние и перебазирование: сохранение и преобразование истории {#sec-development-git-branches-rewrite}
 
 ### Снимки, устойчивые изменения Jujutsu и история операций — обзор {#sec-development-git-branches-changes}
 
@@ -22,6 +22,6 @@
 
 ## Ветки задач и проверка изменений {#sec-development-git-branches-collaboration}
 
-## Pull request и рецензирование кода {#sec-development-git-branches-review}
+## Запрос на слияние (pull request) и рецензирование кода {#sec-development-git-branches-review}
 
 ## Теги и версии проекта {#sec-development-git-branches-tags}

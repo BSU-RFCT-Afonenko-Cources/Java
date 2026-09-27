@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Исключения, границы отказа и управление ресурсами: @book:sec-java-exceptions.
+- Контракт операции и выбор граничных примеров: @book:sec-development-testing.
+:::

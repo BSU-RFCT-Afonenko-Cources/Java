@@ -1,0 +1,7 @@
+::: {course-role="prerequisites"}
+
+Общая подготовка для раздела:
+
+- Создание и завершение потоков: @book:sec-concurrency-threads.
+- Исполнители, зависимости задач, отмена и ограничения ресурсов: @book:sec-concurrency-tasks.
+:::

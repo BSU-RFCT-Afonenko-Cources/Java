@@ -4,13 +4,13 @@
 
 ## Общие данные и составные операции {#sec-concurrency-synchronization-shared}
 
-### Data race и логическая гонка {#sec-concurrency-synchronization-race-models}
+### Гонка данных и логическая гонка {#sec-concurrency-synchronization-race-models}
 
 ## Мониторы и synchronized {#sec-concurrency-synchronization-monitor}
 
 ## Видимость изменений и volatile {#sec-concurrency-synchronization-visibility}
 
-## Java Memory Model и happens-before {#sec-concurrency-synchronization-jmm}
+## Модель памяти Java и отношение happens-before {#sec-concurrency-synchronization-jmm}
 
 ### Частичный порядок событий и последовательная согласованность {#sec-concurrency-synchronization-event-order}
 

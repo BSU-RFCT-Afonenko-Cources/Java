@@ -4,11 +4,11 @@
 
 ## Пакеты, import и структура исходников {#sec-development-build-packages}
 
-## Classpath при компиляции и выполнении {#sec-development-build-classpath}
+## Путь поиска классов при компиляции и выполнении {#sec-development-build-classpath}
 
 ### Загрузка классов и конфликт версий библиотеки {#sec-development-build-linking}
 
-### DLL hell и изоляция зависимостей — обзор {#sec-development-build-dependency-isolation}
+### Конфликты библиотек и изоляция зависимостей — обзор {#sec-development-build-dependency-isolation}
 
 ## Библиотеки и упаковка JAR {#sec-development-build-jar}
 

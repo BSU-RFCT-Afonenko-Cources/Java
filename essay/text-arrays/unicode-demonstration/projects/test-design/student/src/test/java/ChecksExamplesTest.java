@@ -28,7 +28,7 @@ class ChecksExamplesTest {
 
     @Test void rejectsEmptyRangeFailure() {
         assertThrows(AssertionError.class, () -> SliceChecks.verify((s, from, to) -> {
-            if (from == to) throw new IllegalArgumentException("Empty range");
+            if (from == to) throw new IllegalArgumentException("Пустой диапазон");
             return correct(s, from, to);
         }));
     }
@@ -42,7 +42,7 @@ class ChecksExamplesTest {
             }
             return new String(points, from, to - from);
         });
-        assertTrue(invalidCalls[0] > 0, "Check an invalid range");
+        assertTrue(invalidCalls[0] > 0, "Добавьте проверку недопустимого диапазона");
     }
 
 }
